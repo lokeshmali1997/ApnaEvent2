@@ -1,0 +1,2 @@
+rootProject.name='ApnaEvent2'
+include ':app'

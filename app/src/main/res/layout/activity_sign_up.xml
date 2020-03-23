@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimary"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_marginTop="100dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sign UP"
+                        android:padding="20dp"
+                        android:textSize="30sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        />
+                    <ScrollView
+                        android:id="@+id/sv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+
+                    <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:orientation="vertical"
+                         android:padding="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Username"
+
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:hint="Enter name"
+                        android:backgroundTint="@color/colorPrimary"
+                        />
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:text="Email"
+
+                             android:textColor="@color/black"
+                             android:layout_marginTop="10dp"
+                             android:textSize="16sp"
+                             />
+
+                         <EditText
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:padding="8dp"
+                             android:hint="Enter Email"
+                             android:backgroundTint="@color/colorPrimary"
+                             />
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:text="Password"
+                             android:layout_marginTop="10dp"
+                             android:textColor="@color/black"
+                             android:textSize="16sp"
+                             />
+
+                         <EditText
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:padding="8dp"
+                             android:hint="Enter Password"
+                             android:backgroundTint="@color/colorPrimary"
+                             />
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:text="Mobile Number"
+                             android:layout_marginTop="10dp"
+                             android:textColor="@color/black"
+                             android:textSize="16sp"
+                             />
+
+                         <EditText
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:padding="8dp"
+                             android:hint="Enter Number"
+                             android:backgroundTint="@color/colorPrimary"
+                             />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sign Up"
+                            android:background="@color/colorPrimary"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="sans-serif-light"/>
+
+                     </LinearLayout>
+                </ScrollView>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+           </FrameLayout>
+
+</FrameLayout>
