@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "700541859057",
+    "firebase_url": "https://apnaevent-72948.firebaseio.com",
+    "project_id": "apnaevent-72948",
+    "storage_bucket": "apnaevent-72948.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700541859057:android:bea65cac8473a0d2d8e550",
+        "android_client_info": {
+          "package_name": "com.example.apnaevent2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700541859057-k1o5bofjl532id3khjf8ftb56icvesku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.apnaevent2",
+            "certificate_hash": "de609109dffbbb0b402f1f37108379e6d01fe807"
+          }
+        },
+        {
+          "client_id": "700541859057-t206gtsmn64fg5pusndt0cine82a2vlr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn3cAc9paFjoHfC56VEMcdBqA2QTQVpqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700541859057-t206gtsmn64fg5pusndt0cine82a2vlr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

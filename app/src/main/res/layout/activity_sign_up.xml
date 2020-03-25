@@ -75,30 +75,31 @@
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         />
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="8dp"
-                        android:hint="Enter name"
-                        android:backgroundTint="@color/colorPrimary"
-                        />
-                         <TextView
-                             android:layout_width="match_parent"
-                             android:layout_height="wrap_content"
-                             android:text="Email"
 
-                             android:textColor="@color/black"
-                             android:layout_marginTop="10dp"
-                             android:textSize="16sp"
-                             />
+                        <EditText
+                            android:id="@+id/etUser"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:hint="Enter name"
+                            android:padding="8dp" />
 
-                         <EditText
-                             android:layout_width="match_parent"
-                             android:layout_height="wrap_content"
-                             android:padding="8dp"
-                             android:hint="Enter Email"
-                             android:backgroundTint="@color/colorPrimary"
-                             />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="10dp"
+                            android:text="Email"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/etEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:hint="Enter Email"
+                            android:padding="8dp" />
                          <TextView
                              android:layout_width="match_parent"
                              android:layout_height="wrap_content"
@@ -108,13 +109,13 @@
                              android:textSize="16sp"
                              />
 
-                         <EditText
-                             android:layout_width="match_parent"
-                             android:layout_height="wrap_content"
-                             android:padding="8dp"
-                             android:hint="Enter Password"
-                             android:backgroundTint="@color/colorPrimary"
-                             />
+                        <EditText
+                            android:id="@+id/etPass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:hint="Enter Password"
+                            android:padding="8dp" />
                          <TextView
                              android:layout_width="match_parent"
                              android:layout_height="wrap_content"
@@ -124,23 +125,24 @@
                              android:textSize="16sp"
                              />
 
-                         <EditText
-                             android:layout_width="match_parent"
-                             android:layout_height="wrap_content"
-                             android:padding="8dp"
-                             android:hint="Enter Number"
-                             android:backgroundTint="@color/colorPrimary"
-                             />
-
-                        <Button
+                        <EditText
+                            android:id="@+id/etPhone"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Sign Up"
-                            android:background="@color/colorPrimary"
-                            android:textColor="#fff"
-                            android:textStyle="bold"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:hint="Enter Number"
+                            android:padding="8dp" />
+
+                        <Button
+                            android:id="@+id/btnSignUp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_marginTop="40dp"
-                            android:fontFamily="sans-serif-light"/>
+                            android:background="@color/colorPrimary"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Sign Up"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
 
                      </LinearLayout>
                 </ScrollView>
