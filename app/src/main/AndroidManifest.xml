@@ -10,8 +10,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VendorProfile"></activity>
-        <activity android:name=".VendorSearch"></activity>
+
+        <activity android:name=".VendorProfile"
+            android:parentActivityName=".VendorSearch"
+            >
+        </activity>
+        <activity android:name=".VendorSearch"
+            android:parentActivityName=".MainActivity"
+            >
+        </activity>
+
+        <activity android:name=".VendorBooking"
+            android:parentActivityName=".VendorProfile"
+            >
+        </activity>
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".SignUp">
             <intent-filter>

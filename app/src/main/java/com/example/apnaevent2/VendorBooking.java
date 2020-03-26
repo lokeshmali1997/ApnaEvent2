@@ -30,7 +30,7 @@ public class VendorBooking extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         dateFormatter = new SimpleDateFormat("dd-MM-yyyy", Locale.US);
 
         findViewsById();
