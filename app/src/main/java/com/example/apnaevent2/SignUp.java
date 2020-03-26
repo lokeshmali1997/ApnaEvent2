@@ -3,6 +3,7 @@ package com.example.apnaevent2;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -42,46 +43,49 @@ public class SignUp extends AppCompatActivity {
         etPhone = findViewById(R.id.etPhone);
         etPass = findViewById(R.id.etPass);
         btnSignUp = findViewById(R.id.btnSignUp);
-        checkValidation();
-        if(!toast.isEmpty())
-        {
-            Toast.makeText(this,toast,Toast.LENGTH_LONG).show();
-        }
-        else
-        {
-            mUserMasterRef.addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    if(dataSnapshot.exists())
-                        maxId = dataSnapshot.getChildrenCount();
-                }
 
-                @Override
-                public void onCancelled(@NonNull DatabaseError databaseError) {
+        mUserMasterRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if(dataSnapshot.exists())
+                    maxId = (dataSnapshot.getChildrenCount());
+            }
 
-                }
-            });
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
 
             btnSignUp.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    String username = etUser.getText().toString();
-                    String mail = etEmail.getText().toString();
-                    String pass = etPass.getText().toString();
-                    long phone = Integer.parseInt(etPhone.getText().toString());
+                    checkValidation();
+                    if(!toast.isEmpty())
+                    {
+                        Toast.makeText(SignUp.this, toast, Toast.LENGTH_SHORT).show();
+                    }
+                    else {
+                        String username = etUser.getText().toString();
+                        String mail = etEmail.getText().toString();
+                        String pass = etPass.getText().toString();
+                        long phone = Long.parseLong(etPhone.getText().toString());
 
-                    user = new UserMaster();
-                    user.setUsername(username);
-                    user.setEmail(mail);
-                    user.setPass(pass);
-                    user.setPhone(phone);
+                        user = new UserMaster();
+                        user.setUsername(username);
+                        user.setEmail(mail);
+                        user.setPass(pass);
+                        user.setPhone(phone);
 
-                    mUserMasterRef.child(String.valueOf(maxId+1)).setValue(user);
-                    Toast.makeText(SignUp.this, "Sign Up Successful", Toast.LENGTH_LONG).show();
+                        mUserMasterRef.child(String.valueOf(maxId + 1)).setValue(user);
+                        Toast.makeText(SignUp.this, "Sign Up Successful", Toast.LENGTH_LONG).show();
 
+                        Intent intent = new Intent(SignUp.this,Login.class);
+                        startActivity(intent);
+                    }
                 }
             });
-        }
+
 
 
     }
