@@ -70,8 +70,9 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="90dp"
-                            android:src="@drawable/slider3"
+                            android:src="@drawable/deco11"
                             android:background="#00000000"
+                            android:scaleType="centerCrop"
                             android:enabled="true"
                             android:clickable="true"
                             />
@@ -84,7 +85,7 @@
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="image1"
+                                android:text=""
                                 android:textSize="14sp"
                                 android:gravity="center"
                                 android:background="#00000000"
@@ -115,9 +116,10 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="90dp"
-                            android:src="@drawable/slider3"
+                            android:src="@drawable/dj5"
                             android:background="#00000000"
                             android:enabled="true"
+                            android:scaleType="centerCrop"
                             android:clickable="true"
                             />
 
@@ -129,7 +131,7 @@
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="image1"
+                                android:text=""
                                 android:textSize="14sp"
                                 android:gravity="center"
                                 android:background="#00000000"
@@ -159,9 +161,10 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/slider3"
+                            android:src="@drawable/food2"
                             android:background="#00000000"
                             android:enabled="true"
+                            android:scaleType="centerCrop"
                             android:clickable="true"
                             />
 
@@ -173,7 +176,7 @@
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="image1"
+                                android:text=""
                                 android:textSize="14sp"
                                 android:gravity="center"
                                 android:background="#00000000"
@@ -200,14 +203,15 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         >
+
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/slider3"
                             android:background="#00000000"
-                            android:enabled="true"
                             android:clickable="true"
-                            />
+                            android:enabled="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/dl4" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -217,7 +221,7 @@
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="image1"
+                                android:text=""
                                 android:textSize="14sp"
                                 android:gravity="center"
                                 android:background="#00000000"
@@ -284,10 +288,11 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="90dp"
-                    android:src="@drawable/slider3"
+                    android:src="@drawable/deco1"
                     android:background="#00000000"
                     android:enabled="true"
                     android:clickable="true"
+                    android:scaleType="centerCrop"
                     />
 
                 <LinearLayout
@@ -298,7 +303,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="image1"
+                        android:text=""
                         android:textSize="14sp"
                         android:gravity="center"
                         android:background="#00000000"
@@ -329,7 +334,8 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="90dp"
-                    android:src="@drawable/slider3"
+                    android:src="@drawable/deco6"
+                    android:scaleType="centerCrop"
                     android:background="#00000000"
                     android:enabled="true"
                     android:clickable="true"
@@ -343,7 +349,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="image1"
+                        android:text=""
                         android:textSize="14sp"
                         android:gravity="center"
                         android:background="#00000000"
@@ -373,8 +379,9 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/slider3"
+                    android:src="@drawable/dl9"
                     android:background="#00000000"
+                    android:scaleType="centerCrop"
                     android:enabled="true"
                     android:clickable="true"
                     />
@@ -387,7 +394,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="image1"
+                        android:text=""
                         android:textSize="14sp"
                         android:gravity="center"
                         android:background="#00000000"
@@ -417,7 +424,8 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/slider3"
+                    android:src="@drawable/deco2"
+                    android:scaleType="centerCrop"
                     android:background="#00000000"
                     android:enabled="true"
                     android:clickable="true"
@@ -431,7 +439,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="image1"
+                        android:text=""
                         android:textSize="14sp"
                         android:gravity="center"
                         android:background="#00000000"
@@ -502,7 +510,8 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="90dp"
-                            android:src="@drawable/slider3"
+                            android:src="@drawable/food1"
+                            android:scaleType="centerCrop"
                             android:background="#00000000"
                             android:enabled="true"
                             android:clickable="true"
@@ -516,7 +525,7 @@
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="image1"
+                                android:text=""
                                 android:textSize="14sp"
                                 android:gravity="center"
                                 android:background="#00000000"
@@ -534,7 +543,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:elevation="1dp"
-                    app:cardCornerRadius="15dp"
+                    app:cardCornerRadius="8dp"
                     android:layout_margin="5dp"
 
 
@@ -547,7 +556,8 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="90dp"
-                            android:src="@drawable/slider3"
+                            android:src="@drawable/food8"
+                            android:scaleType="centerCrop"
                             android:background="#00000000"
                             android:enabled="true"
                             android:clickable="true"
@@ -561,7 +571,7 @@
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="image1"
+                                android:text=""
                                 android:textSize="14sp"
                                 android:gravity="center"
                                 android:background="#00000000"
@@ -579,7 +589,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:elevation="1dp"
-                    app:cardCornerRadius="15dp"
+                    app:cardCornerRadius="8dp"
                     android:layout_margin="5dp"
 
                     >
@@ -591,9 +601,10 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="90dp"
-                            android:src="@drawable/slider3"
+                            android:src="@drawable/food7"
                             android:background="#00000000"
                             android:enabled="true"
+                            android:scaleType="centerCrop"
                             android:clickable="true"
                             />
 
@@ -605,7 +616,7 @@
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="image1"
+                                android:text=""
                                 android:textSize="14sp"
                                 android:gravity="center"
                                 android:background="#00000000"
@@ -623,7 +634,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:elevation="1dp"
-                    app:cardCornerRadius="15dp"
+                    app:cardCornerRadius="8dp"
                     android:layout_margin="5dp"
 
                     >
@@ -635,7 +646,8 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/slider3"
+                            android:src="@drawable/food6"
+                            android:scaleType="centerCrop"
                             android:background="#00000000"
                             android:enabled="true"
                             android:clickable="true"
@@ -649,11 +661,12 @@
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="image1"
+                                android:text=""
                                 android:textSize="14sp"
                                 android:gravity="center"
                                 android:background="#00000000"
-                                android:textColor="#000000"
+                                android:textColor="#fff"
+                                android:layout_marginTop="20dp"
                                 android:enabled="false"
                                 android:clickable="false"
                                 android:layout_weight="1"
@@ -702,7 +715,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="0dp"
+                android:layout_marginBottom="30dp"
                 >
 
                 <androidx.cardview.widget.CardView
@@ -722,7 +735,8 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="90dp"
-                            android:src="@drawable/slider3"
+                            android:src="@drawable/dj2"
+                            android:scaleType="centerCrop"
                             android:background="#00000000"
                             android:enabled="true"
                             android:clickable="true"
@@ -736,7 +750,7 @@
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="image1"
+                                android:text=""
                                 android:textSize="14sp"
                                 android:gravity="center"
                                 android:background="#00000000"
@@ -754,7 +768,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:elevation="1dp"
-                    app:cardCornerRadius="15dp"
+                    app:cardCornerRadius="8dp"
                     android:layout_margin="5dp"
 
 
@@ -767,7 +781,8 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="90dp"
-                            android:src="@drawable/slider3"
+                            android:src="@drawable/dj9"
+                            android:scaleType="centerCrop"
                             android:background="#00000000"
                             android:enabled="true"
                             android:clickable="true"
@@ -781,7 +796,7 @@
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="image1"
+                                android:text=""
                                 android:textSize="14sp"
                                 android:gravity="center"
                                 android:background="#00000000"
@@ -799,7 +814,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:elevation="1dp"
-                    app:cardCornerRadius="15dp"
+                    app:cardCornerRadius="8dp"
                     android:layout_margin="5dp"
 
                     >
@@ -811,7 +826,8 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="90dp"
-                            android:src="@drawable/slider3"
+                            android:src="@drawable/dj5"
+                            android:scaleType="centerCrop"
                             android:background="#00000000"
                             android:enabled="true"
                             android:clickable="true"
@@ -825,7 +841,7 @@
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="image1"
+                                android:text=""
                                 android:textSize="14sp"
                                 android:gravity="center"
                                 android:background="#00000000"
@@ -843,7 +859,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:elevation="1dp"
-                    app:cardCornerRadius="15dp"
+                    app:cardCornerRadius="8dp"
                     android:layout_margin="5dp"
 
                     >
@@ -855,7 +871,8 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/slider3"
+                            android:src="@drawable/dj4"
+                            android:scaleType="centerCrop"
                             android:background="#00000000"
                             android:enabled="true"
                             android:clickable="true"
@@ -869,7 +886,7 @@
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:text="image1"
+                                android:text=""
                                 android:textSize="14sp"
                                 android:gravity="center"
                                 android:background="#00000000"
