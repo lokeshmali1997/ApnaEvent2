@@ -1,13 +1,915 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:elevation="1dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="20dp"
+
+        >
 
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="200dp"
         android:id="@+id/view_pager"/>
 
+    </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp">
 
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_alignParentLeft="true"
+                    android:text="FEATURED"
+                    android:textSize="14sp"
+
+                    android:background="@drawable/border"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-light"/>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="5dp"
+
+                    >
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/deco11"
+                            android:background="#00000000"
+                            android:scaleType="centerCrop"
+                            android:enabled="true"
+                            android:clickable="true"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text=""
+                                android:textSize="14sp"
+                                android:gravity="center"
+                                android:background="#00000000"
+                                android:textColor="#000000"
+                                android:enabled="false"
+                                android:clickable="false"
+                                android:layout_weight="1"
+                                />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="5dp"
+
+
+                    >
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/dj5"
+                            android:background="#00000000"
+                            android:enabled="true"
+                            android:scaleType="centerCrop"
+                            android:clickable="true"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text=""
+                                android:textSize="14sp"
+                                android:gravity="center"
+                                android:background="#00000000"
+                                android:textColor="#000000"
+                                android:enabled="false"
+                                android:clickable="false"
+                                android:layout_weight="1"
+                                />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="5dp"
+
+                    >
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/food2"
+                            android:background="#00000000"
+                            android:enabled="true"
+                            android:scaleType="centerCrop"
+                            android:clickable="true"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text=""
+                                android:textSize="14sp"
+                                android:gravity="center"
+                                android:background="#00000000"
+                                android:textColor="#000000"
+                                android:enabled="false"
+                                android:clickable="false"
+                                android:layout_weight="1"
+                                />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="5dp"
+
+                    >
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="#00000000"
+                            android:clickable="true"
+                            android:enabled="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/dl4" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text=""
+                                android:textSize="14sp"
+                                android:gravity="center"
+                                android:background="#00000000"
+                                android:textColor="#000000"
+                                android:enabled="false"
+                                android:clickable="false"
+                                android:layout_weight="1"
+                                />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_alignParentLeft="true"
+                    android:text="Decoration"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-light"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:text="See All"
+                    android:textSize="14sp"
+                    android:background="@drawable/border"
+                    android:layout_alignParentRight="true"
+
+
+                    />
+
+            </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:elevation="1dp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="5dp"
+
+            >
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                >
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/deco1"
+                    android:background="#00000000"
+                    android:enabled="true"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:background="#00000000"
+                        android:textColor="#000000"
+                        android:enabled="false"
+                        android:clickable="false"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="1dp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="5dp"
+
+
+            >
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                >
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/deco6"
+                    android:scaleType="centerCrop"
+                    android:background="#00000000"
+                    android:enabled="true"
+                    android:clickable="true"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:background="#00000000"
+                        android:textColor="#000000"
+                        android:enabled="false"
+                        android:clickable="false"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="1dp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="5dp"
+
+            >
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                >
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/dl9"
+                    android:background="#00000000"
+                    android:scaleType="centerCrop"
+                    android:enabled="true"
+                    android:clickable="true"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:background="#00000000"
+                        android:textColor="#000000"
+                        android:enabled="false"
+                        android:clickable="false"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="1dp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="5dp"
+
+            >
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                >
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/deco2"
+                    android:scaleType="centerCrop"
+                    android:background="#00000000"
+                    android:enabled="true"
+                    android:clickable="true"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:background="#00000000"
+                        android:textColor="#000000"
+                        android:enabled="false"
+                        android:clickable="false"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:gravity="left"
+                    android:layout_alignParentLeft="true"
+                    android:text="Food"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-light" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:text="See All"
+                    android:textSize="14sp"
+                    android:background="@drawable/border"
+                    android:layout_alignParentRight="true"
+
+
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="5dp"
+
+                    >
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/food1"
+                            android:scaleType="centerCrop"
+                            android:background="#00000000"
+                            android:enabled="true"
+                            android:clickable="true"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text=""
+                                android:textSize="14sp"
+                                android:gravity="center"
+                                android:background="#00000000"
+                                android:textColor="#000000"
+                                android:enabled="false"
+                                android:clickable="false"
+                                android:layout_weight="1"
+                                />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="5dp"
+
+
+                    >
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/food8"
+                            android:scaleType="centerCrop"
+                            android:background="#00000000"
+                            android:enabled="true"
+                            android:clickable="true"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text=""
+                                android:textSize="14sp"
+                                android:gravity="center"
+                                android:background="#00000000"
+                                android:textColor="#000000"
+                                android:enabled="false"
+                                android:clickable="false"
+                                android:layout_weight="1"
+                                />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="5dp"
+
+                    >
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/food7"
+                            android:background="#00000000"
+                            android:enabled="true"
+                            android:scaleType="centerCrop"
+                            android:clickable="true"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text=""
+                                android:textSize="14sp"
+                                android:gravity="center"
+                                android:background="#00000000"
+                                android:textColor="#000000"
+                                android:enabled="false"
+                                android:clickable="false"
+                                android:layout_weight="1"
+                                />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="5dp"
+
+                    >
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/food6"
+                            android:scaleType="centerCrop"
+                            android:background="#00000000"
+                            android:enabled="true"
+                            android:clickable="true"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text=""
+                                android:textSize="14sp"
+                                android:gravity="center"
+                                android:background="#00000000"
+                                android:textColor="#fff"
+                                android:layout_marginTop="20dp"
+                                android:enabled="false"
+                                android:clickable="false"
+                                android:layout_weight="1"
+                                />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_alignParentLeft="true"
+                    android:text="Dj"
+                    android:gravity="left"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-light" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:text="See All"
+                    android:textSize="14sp"
+
+                    android:background="@drawable/border"
+                    android:layout_alignParentRight="true"
+
+
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="30dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_margin="5dp"
+
+                    >
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/dj2"
+                            android:scaleType="centerCrop"
+                            android:background="#00000000"
+                            android:enabled="true"
+                            android:clickable="true"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text=""
+                                android:textSize="14sp"
+                                android:gravity="center"
+                                android:background="#00000000"
+                                android:textColor="#000000"
+                                android:enabled="false"
+                                android:clickable="false"
+                                android:layout_weight="1"
+                                />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="5dp"
+
+
+                    >
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/dj9"
+                            android:scaleType="centerCrop"
+                            android:background="#00000000"
+                            android:enabled="true"
+                            android:clickable="true"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text=""
+                                android:textSize="14sp"
+                                android:gravity="center"
+                                android:background="#00000000"
+                                android:textColor="#000000"
+                                android:enabled="false"
+                                android:clickable="false"
+                                android:layout_weight="1"
+                                />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="5dp"
+
+                    >
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/dj5"
+                            android:scaleType="centerCrop"
+                            android:background="#00000000"
+                            android:enabled="true"
+                            android:clickable="true"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text=""
+                                android:textSize="14sp"
+                                android:gravity="center"
+                                android:background="#00000000"
+                                android:textColor="#000000"
+                                android:enabled="false"
+                                android:clickable="false"
+                                android:layout_weight="1"
+                                />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="5dp"
+
+                    >
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/dj4"
+                            android:scaleType="centerCrop"
+                            android:background="#00000000"
+                            android:enabled="true"
+                            android:clickable="true"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text=""
+                                android:textSize="14sp"
+                                android:gravity="center"
+                                android:background="#00000000"
+                                android:textColor="#000000"
+                                android:enabled="false"
+                                android:clickable="false"
+                                android:layout_weight="1"
+                                />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+</ScrollView>
 </RelativeLayout>
 
