@@ -121,7 +121,7 @@ public class SignUp extends AppCompatActivity {
                     {
                         toast = "Please Enter Password";
                     }
-                    else if(etPass.getText().toString().length() != 8)
+                    else if(etPass.getText().toString().length() < 8)
                     {
                         toast = "Password should be length of minimum 8";
                     }
