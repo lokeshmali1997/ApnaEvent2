@@ -16,15 +16,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="350dp"
-            android:background="@drawable/gradientbackground"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            ><!--android:background="@drawable/gradientbackground"-->
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
                 android:layout_gravity="center_horizontal"
                 android:foreground="@drawable/profileimagegradient"
-                android:src="@drawable/hitu4" />
+             /><!--android:src="@drawable/hitu4"-->
         </LinearLayout>
 
         <TextView
@@ -65,17 +65,17 @@
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="56dp"
-                android:src="@drawable/dhol" />
+            /> <!--android:src="@drawable/dhol"-->
 
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="56dp"
-                android:src="@drawable/dj" />
+             /><!--android:src="@drawable/dj"-->
 
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="56dp"
-                android:src="@drawable/horse" />
+             /><!--android:src="@drawable/horse"-->
 
         </LinearLayout>
 
@@ -90,7 +90,7 @@
             <ImageView
                 android:layout_width="56dp"
                 android:layout_height="56dp"
-                android:src="@drawable/ic_email_black_24dp" />
+             /><!--android:src="@drawable/ic_email_black_24dp"-->
 
             <TextView
                 android:layout_width="wrap_content"
@@ -111,7 +111,7 @@
             <ImageView
                 android:layout_width="56dp"
                 android:layout_height="56dp"
-                android:src="@drawable/ic_phone_android_black_24dp" />
+             /><!--android:src="@drawable/ic_phone_android_black_24dp"-->
 
             <TextView
                 android:layout_width="wrap_content"
@@ -128,8 +128,8 @@
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="35dp"
-        android:background="@drawable/buttonstylegradient"
+
         android:text="Book"
         android:textColor="#fff" />
-
+    <!--  android:background="@drawable/buttonstylegradient"-->
 </LinearLayout>

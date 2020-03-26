@@ -15,7 +15,7 @@ import com.example.apnaevent2.R;
 
 public class CustomImageAdapter extends PagerAdapter {
 
-   private int[] image_resource = {R.drawable.slider1,R.drawable.slider2,R.drawable.slider3};
+   private int[] image_resource = {R.drawable.deco5,R.drawable.dj0,R.drawable.food5,R.drawable.h3,R.drawable.dj7};
    private Context ctx;
    private LayoutInflater layoutInflater;
 
