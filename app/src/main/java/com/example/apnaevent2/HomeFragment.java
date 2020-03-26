@@ -35,16 +35,11 @@ CustomImageAdapter adapter;
         adapter = new CustomImageAdapter(this.getActivity());
         viewPager.setAdapter(adapter);
 
-
+        initImageSlider();
         return view;
     }
 
-   // int currentPage = 0;
-
-    private void initImageSlider(View view){
-
-        //Set the pager with an adapter
-
+    private void initImageSlider() {
 
         final float density = getResources().getDisplayMetrics().density;
 
@@ -60,6 +55,11 @@ CustomImageAdapter adapter;
                     viewPager.setCurrentItem(1);
                 } else if(viewPager.getCurrentItem() == 1){
                     viewPager.setCurrentItem(2);
+                } else if(viewPager.getCurrentItem() == 2) {
+                    viewPager.setCurrentItem(3);
+                }else if(viewPager.getCurrentItem() == 3){
+                        viewPager.setCurrentItem(4);
+
                 } else {
                     viewPager.setCurrentItem(0);
                 }
@@ -72,7 +72,7 @@ CustomImageAdapter adapter;
             public void run() {
                 handler.post(Update);
             }
-        }, 2500, 2500);
+        }, 4000, 3000);
 
         // Pager listener over indicator
 
