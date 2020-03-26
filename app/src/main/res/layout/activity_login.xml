@@ -79,6 +79,7 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:hint="Enter Email / Number"
+                            android:id="@+id/etUsername"
                             android:backgroundTint="@color/colorPrimary"
                             />
 
@@ -96,11 +97,13 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:hint="Enter Password"
+                            android:id="@+id/etPassword"
                             android:backgroundTint="@color/colorPrimary"
                             />
 
 
                         <Button
+                            android:id="@+id/btnLogin"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Login"
