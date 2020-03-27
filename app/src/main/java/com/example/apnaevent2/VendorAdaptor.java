@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.RatingBar;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -35,12 +37,24 @@ public class VendorAdaptor extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        if(convertView == null)
-        {
+
+
             LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(R.layout.vendor_search_row,null);
+            TextView name = convertView.findViewById(R.id.txtVendorName);
+            TextView mobile = convertView.findViewById(R.id.txtVendorMobile);
+            TextView email = convertView.findViewById(R.id.txtVendorEmail);
+            RatingBar ratingBar = convertView.findViewById(R.id.txtVendorRating);
 
-        }
-        return null;
+
+            Vender vendor = venderArray.get(position);
+
+            name.setText(vendor.getName());
+            mobile.setText(vendor.getMob());
+            email.setText(vendor.getEmail());
+            ratingBar.setRating(vendor.getRating());
+            name.setTag(vendor.getId());
+
+        return convertView;
     }
 }

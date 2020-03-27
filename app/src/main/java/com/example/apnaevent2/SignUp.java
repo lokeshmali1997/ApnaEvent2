@@ -71,7 +71,7 @@ public class SignUp extends AppCompatActivity {
                         String username = etUser.getText().toString();
                         String mail = etEmail.getText().toString();
                         String pass = etPass.getText().toString();
-                        long phone = Long.parseLong(etPhone.getText().toString());
+                        String phone = etPhone.getText().toString();
 
                         user = new UserMaster();
                         user.setUsername(username);
