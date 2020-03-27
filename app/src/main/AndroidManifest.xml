@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".VendorProfile"></activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".VendorFullProfile"
             android:parentActivityName=".VendorSearch"></activity>
         <activity
             android:name=".VendorSearch"
@@ -24,7 +24,7 @@
         <activity android:name=".Login" />
         <activity android:name=".full_view" />
         <activity android:name=".SignUp" />
-        <activity android:name=".VendorFullProfile">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

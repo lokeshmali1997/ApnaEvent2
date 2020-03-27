@@ -5,19 +5,19 @@ public class Vender {
     private long mob;
     private String email;
     private  String add;
-    private String img;
+
     private int category;
     private int rating;
 
     public Vender() {
     }
 
-    public Vender(String name, long mob, String email, String add, String img, int category, int rating) {
+    public Vender(String name, long mob, String email, String add, int category, int rating) {
         this.name = name;
         this.mob = mob;
         this.email = email;
         this.add = add;
-        this.img = img;
+
         this.category = category;
         this.rating = rating;
     }
@@ -52,14 +52,6 @@ public class Vender {
 
     public void setAdd(String add) {
         this.add = add;
-    }
-
-    public String getImg() {
-        return img;
-    }
-
-    public void setImg(String img) {
-        this.img = img;
     }
 
     public int getCategory() {
