@@ -601,7 +601,7 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="90dp"
-                            android:src="@drawable/food7"
+
                             android:background="#00000000"
                             android:enabled="true"
                             android:scaleType="centerCrop"

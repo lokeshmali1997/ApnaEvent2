@@ -9,9 +9,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:largeHeap="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".VendorProfile"
+        <activity android:name=".MainActivity"
             android:parentActivityName=".VendorSearch"
             >
         </activity>
@@ -24,8 +25,9 @@
             android:parentActivityName=".VendorProfile"
             >
         </activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".Login">
+        <activity android:name=".full_view"></activity>
+        <activity android:name=".Login"></activity>
+        <activity android:name=".VendorProfile">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

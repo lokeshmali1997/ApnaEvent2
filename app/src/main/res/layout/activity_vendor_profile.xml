@@ -8,36 +8,48 @@
     android:orientation="vertical"
     tools:context=".VendorProfile">
 
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="305dp"
+        android:layout_height="200dp"
         android:baselineAligned="false">
 
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="5dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="20dp"
+            >
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="match_parent"
             android:orientation="vertical"
-            android:background="@drawable/gradientbackground"
-            ><!--"-->
+            android:background="@drawable/gradientbackground">
+
+
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="300dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
                 android:layout_gravity="center_horizontal"
-                android:foreground="@drawable/profileimagegradient"
-                android:src="@drawable/hitu4"
-                /><!---->
+                android:src="@drawable/h7"
+               />
+
         </LinearLayout>
 
-        <TextView
+       <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="150dp"
-            android:layout_marginTop="200dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="140dp"
             android:text="Hitesh Kumar"
-            android:textColor="#fff"
-            android:textSize="40sp"
+            android:textColor="#02bd66"
+            android:textSize="30sp"
             android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
     </RelativeLayout>
 
     <LinearLayout
@@ -61,8 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:orientation="horizontal"
-            android:paddingLeft="15dp">
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="120dp"
@@ -93,10 +104,10 @@
             android:paddingLeft="25dp">
 
             <ImageView
-                android:layout_width="56dp"
-                android:layout_height="56dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
                 android:src="@drawable/ic_email_black_24dp"
-             /><!---->
+             />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -104,7 +115,7 @@
                 android:layout_gravity="center_vertical"
                 android:paddingLeft="30dp"
                 android:text="hggehlot777@gmail.com"
-                android:textSize="20dp" />
+                android:textSize="15dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -115,8 +126,8 @@
             android:paddingLeft="25dp">
 
             <ImageView
-                android:layout_width="56dp"
-                android:layout_height="56dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
                 android:src="@drawable/ic_phone_android_black_24dp"
              /><!---->
 
@@ -126,13 +137,13 @@
                 android:layout_gravity="center_vertical"
                 android:paddingLeft="30dp"
                 android:text="91-9982743247"
-                android:textSize="20dp" />
+                android:textSize="15dp" />
         </LinearLayout>
     </LinearLayout>
 
     <Button
         android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="35dp"
 
