@@ -15,8 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="190dp"
         android:orientation="horizontal"
-        >
-        android:background="@drawable/shadotovendor"
+        android:background="@drawable/shadotovendor">
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -25,8 +24,7 @@
             android:id="@+id/imageView"
             android:layout_width="120dp"
             android:layout_height="180dp"
-             />
-        android:src="@drawable/pankaj"
+            android:src="@drawable/pankaj" />
     </FrameLayout>
 
     <LinearLayout
@@ -88,8 +86,8 @@
         android:layout_width="match_parent"
         android:layout_height="190dp"
         android:orientation="horizontal"
-        >
-        android:background="@drawable/shadotovendor"
+
+        android:background="@drawable/shadotovendor" >
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
@@ -98,8 +96,7 @@
                 android:id="@+id/imageView2"
                 android:layout_width="120dp"
                 android:layout_height="180dp"
-                 />
-            android:src="@drawable/pankaj"
+                android:src="@drawable/pankaj"/>
         </FrameLayout>
 
         <LinearLayout

@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".VendorProfile"
+        <activity android:name=".Login"
             android:parentActivityName=".VendorSearch"
             >
         </activity>
@@ -25,7 +25,7 @@
             >
         </activity>
         <activity android:name=".MainActivity"></activity>
-        <activity android:name=".Login">
+        <activity android:name=".VendorProfile">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
