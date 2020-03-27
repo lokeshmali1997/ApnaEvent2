@@ -78,20 +78,17 @@
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="56dp"
-                android:src="@drawable/dhol"
-            /> <!---->
+                android:src="@drawable/dhol" /> <!---->
 
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="56dp"
-                android:src="@drawable/dj"
-             /><!--"-->
+                android:src="@drawable/dj" /><!--"-->
 
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="56dp"
-                android:src="@drawable/horse"
-             /><!---->
+                android:src="@drawable/horse" /><!---->
 
         </LinearLayout>
 
@@ -106,8 +103,7 @@
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/ic_email_black_24dp"
-             />
+                android:src="@drawable/ic_email_black_24dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -128,8 +124,7 @@
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/ic_phone_android_black_24dp"
-             /><!---->
+                android:src="@drawable/ic_phone_android_black_24dp" /><!---->
 
             <TextView
                 android:layout_width="wrap_content"
