@@ -11,19 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".VendorFullProfile"></activity>
         <activity
-            android:name=".MainActivity"
-            android:parentActivityName=".VendorSearch"></activity>
-        <activity
-            android:name=".VendorFullProfile"
-            android:parentActivityName=".MainActivity"></activity>
-        <activity
-            android:name=".VendorBooking"
-           ></activity>
+            android:name=".VendorSearch"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".VendorBooking" />
         <activity android:name=".Login" />
         <activity android:name=".full_view" />
         <activity android:name=".SignUp" />
-        <activity android:name=".VendorSearch">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
