@@ -9,57 +9,78 @@
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="729dp"
+        android:layout_marginTop="48dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
             android:orientation="horizontal">
+
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/kanchan"
-           />
+                android:src="@drawable/kanchan" />
+
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="30dp"
-                android:text="click1"/>
+                android:textColor="#fff"
+                android:background="@drawable/buttonstylegradient"
+                android:text="click1" />
+
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="30dp"
-                android:text="click2"/>
+                android:textColor="#fff"
+                android:background="@drawable/buttonstylegradient"
+                android:text="click2" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginTop="80dp"
-            >
+            android:orientation="vertical">
+
             <Button
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border"
+                android:textColor="#000000"
                 android:text="Location"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:textAllCaps="false"/>
+                android:drawablePadding="20dp"
+                android:textSize="20sp"
+               android:drawableLeft="@drawable/ic_place_black_24dp"
+                android:drawableTint="@color/colorPrimary"
+                android:textAllCaps="false" />
+
             <Button
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="20dp"
+                android:textSize="20sp"
+                android:drawableLeft="@drawable/ic_share_black_24dp"
+                android:background="@drawable/border"
+                android:textColor="#000000"
                 android:text="Share App"
-                android:textAllCaps="false"/>
+                android:textAllCaps="false" />
         </LinearLayout>
 
     </LinearLayout>
