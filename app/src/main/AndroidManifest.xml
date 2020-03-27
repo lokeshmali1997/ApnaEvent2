@@ -24,6 +24,7 @@
             android:parentActivityName=".VendorProfile"
             >
         </activity>
+        <activity android:name=".full_view"></activity>
         <activity android:name=".Login"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
