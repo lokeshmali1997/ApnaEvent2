@@ -22,6 +22,8 @@ import java.util.regex.Pattern;
 
 public class SignUp extends AppCompatActivity {
 
+
+
     EditText etUser,etEmail,etPhone,etPass;
     Button btnSignUp;
     DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
