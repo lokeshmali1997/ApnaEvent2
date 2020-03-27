@@ -25,7 +25,7 @@ public class Login extends AppCompatActivity {
     Button btnLogin;
 
     DatabaseReference mUserMaster = FirebaseDatabase.getInstance().getReference().child("UserMaster");
-
+    Intent intent = new Intent(this,MainActivity.class);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +52,6 @@ public class Login extends AppCompatActivity {
                             {
                                 if(data.child("pass").getValue().equals(etPassword.getText().toString()))
                                 {
-                                    Toast.makeText(Login.this, data.getKey().toString(), Toast.LENGTH_SHORT).show();
                                     sharedUserLogin(data.getKey().toString());
                                 }
 
@@ -78,7 +77,7 @@ public class Login extends AppCompatActivity {
 
             if(sh.contains("UserId"))
             {
-                Intent intent = new Intent(this,MainActivity.class);
+
                 startActivity(intent);
             }
 
@@ -90,5 +89,7 @@ public class Login extends AppCompatActivity {
         SharedPreferences.Editor myEdit = sharedPreferences.edit();
         myEdit.putString("UserId",id);
         myEdit.commit();
+        startActivity(intent);
+
     }
 }

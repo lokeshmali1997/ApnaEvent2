@@ -18,28 +18,17 @@
         app:srcCompat="@drawable/kanchan" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:textSize="20sp"
-        android:text="Kanchan"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="64dp"
+        android:text="Name:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="16dp"
-        android:text="Name:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/txtName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
@@ -57,10 +46,10 @@
         android:layout_marginTop="10dp"
         android:text="Email :"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/txtEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
@@ -76,12 +65,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
         android:layout_marginTop="10dp"
-        android:text="Password :"
+        android:text="Mobile :"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/txtMobile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
@@ -99,7 +88,7 @@
         android:layout_marginTop="10dp"
         android:text="Address :"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintTop_toBottomOf="@+id/txtMobile" />
 
     <TextView
         android:id="@+id/textView16"
