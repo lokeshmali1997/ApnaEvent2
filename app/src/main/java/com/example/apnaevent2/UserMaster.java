@@ -4,7 +4,7 @@ public class UserMaster {
     private String Username;
     private String Email;
     private String pass;
-    private long phone;
+    private String phone;
 
     public UserMaster() {
     }
@@ -33,11 +33,11 @@ public class UserMaster {
         this.pass = pass;
     }
 
-    public long getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(long phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 }

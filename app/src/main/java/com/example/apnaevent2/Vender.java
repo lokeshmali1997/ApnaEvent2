@@ -2,25 +2,25 @@ package com.example.apnaevent2;
 
 public class Vender {
     private String name;
-    private long mob;
+    private String mob;
     private String email;
     private  String add;
-    private String img;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    private String id;
     private int category;
     private int rating;
 
     public Vender() {
     }
 
-    public Vender(String name, long mob, String email, String add, String img, int category, int rating) {
-        this.name = name;
-        this.mob = mob;
-        this.email = email;
-        this.add = add;
-        this.img = img;
-        this.category = category;
-        this.rating = rating;
-    }
 
     public String getName() {
         return name;
@@ -30,11 +30,11 @@ public class Vender {
         this.name = name;
     }
 
-    public long getMob() {
+    public String getMob() {
         return mob;
     }
 
-    public void setMob(long mob) {
+    public void setMob(String mob) {
         this.mob = mob;
     }
 
@@ -52,14 +52,6 @@ public class Vender {
 
     public void setAdd(String add) {
         this.add = add;
-    }
-
-    public String getImg() {
-        return img;
-    }
-
-    public void setImg(String img) {
-        this.img = img;
     }
 
     public int getCategory() {

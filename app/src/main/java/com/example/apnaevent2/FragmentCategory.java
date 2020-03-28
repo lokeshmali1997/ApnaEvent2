@@ -36,6 +36,7 @@ View view;
             @Override
             public void onClick(View view) {
                 Intent intent =  new Intent(view.getContext(),VendorSearch.class);
+                intent.putExtra("cat","3");
                 startActivity(intent);
             }
         });
@@ -47,6 +48,7 @@ View view;
             @Override
             public void onClick(View view) {
                 Intent intent =  new Intent(view.getContext(),VendorSearch.class);
+                intent.putExtra("cat","1");
                 startActivity(intent);
             }
         });
@@ -58,6 +60,7 @@ View view;
             @Override
             public void onClick(View view) {
                 Intent intent =  new Intent(view.getContext(),VendorSearch.class);
+                intent.putExtra("cat","2");
                 startActivity(intent);
             }
         });
