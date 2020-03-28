@@ -369,7 +369,7 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="90dp"
-                            android:src="@drawable/food8"
+                            android:src="@drawable/food6"
                             android:scaleType="centerCrop"
                             android:background="#00000000"
                             android:enabled="true"
@@ -414,7 +414,7 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="90dp"
-
+                            android:src="@drawable/food8"
                             android:background="#00000000"
                             android:enabled="true"
                             android:scaleType="centerCrop"
@@ -459,7 +459,7 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/food6"
+                            android:src="@drawable/food3"
                             android:scaleType="centerCrop"
                             android:background="#00000000"
                             android:enabled="true"
