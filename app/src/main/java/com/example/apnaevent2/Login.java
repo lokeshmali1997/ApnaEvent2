@@ -25,7 +25,7 @@ public class Login extends AppCompatActivity {
     Button btnLogin;
 
     DatabaseReference mUserMaster = FirebaseDatabase.getInstance().getReference().child("UserMaster");
-    Intent intent = new Intent(this,MainActivity.class);
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,7 +77,7 @@ public class Login extends AppCompatActivity {
 
             if(sh.contains("UserId"))
             {
-
+                intent = new Intent(this,MainActivity.class);
                 startActivity(intent);
             }
 
@@ -87,9 +87,43 @@ public class Login extends AppCompatActivity {
     {
         SharedPreferences sharedPreferences = getSharedPreferences("UserData",MODE_PRIVATE);
         SharedPreferences.Editor myEdit = sharedPreferences.edit();
+
+
         myEdit.putString("UserId",id);
         myEdit.commit();
+        intent = new Intent(this,MainActivity.class);
         startActivity(intent);
+
+    }
+
+    public void forgotpassword(View view) {
+
+        Button button = findViewById(R.id.btnforgot);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login.this,ForgotPassword.class);
+                startActivity(intent);
+
+
+
+            }
+        });
+
+    }
+
+    public void Signup(View view) {
+
+        Button button = findViewById(R.id.btnloginsignip);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Login.this,SignUp.class);
+                startActivity(i);
+            }
+        });
 
     }
 }
