@@ -32,7 +32,7 @@ public class VendorSearch extends AppCompatActivity {
 
     DatabaseReference vendorRoot = FirebaseDatabase.getInstance().getReference("Vendor");
     Query query;
-    ArrayList<Vender> vendorList = new ArrayList<>();;
+    ArrayList<Vender> vendorList = new ArrayList<>();
     VendorAdaptor vendorAdaptor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,14 +50,8 @@ public class VendorSearch extends AppCompatActivity {
         }
 
 
-
-
-
         query = vendorRoot.orderByChild("category").equalTo(Integer.parseInt(cat));
         listView = (ListView) findViewById(R.id.lstVendor);
-
-
-        vendorList = new ArrayList<>();
 
         vendorAdaptor = new VendorAdaptor(this,vendorList);
 
@@ -75,6 +69,7 @@ public class VendorSearch extends AppCompatActivity {
                         vender.setMob(dataSnapshot.child("mob").getValue().toString());
                         vender.setEmail(dataSnapshot.child("email").getValue().toString());
                         vender.setId(dataSnapshot.getKey());
+                        vender.setAdd(dataSnapshot.child("add").getValue().toString());
                         vender.setRating(Integer.parseInt(dataSnapshot.child("rating").getValue().toString()));
                         vendorList.add(vender);
 
@@ -109,6 +104,10 @@ public class VendorSearch extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     Intent intent = new Intent(getApplicationContext(),VendorFullProfile.class);
                     intent.putExtra("v_id",((TextView)findViewById(R.id.txtVendorName)).getTag().toString());
+                    intent.putExtra("v_name",((TextView)findViewById(R.id.txtVendorName)).getText().toString());
+                    intent.putExtra("v_mob",((TextView)findViewById(R.id.txtVendorMobile)).getText().toString());
+                    intent.putExtra("v_email",((TextView)findViewById(R.id.txtVendorEmail)).getText().toString());
+                    intent.putExtra("v_add",((TextView)findViewById(R.id.txtVendorEmail)).getTag().toString());
                     startActivity(intent);
             }
         });

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="1dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="20dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/deco2"
+                android:scaleType="centerCrop"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ravi"
+                    android:textSize="16dp"
+                    android:id="@+id/p_name"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="italic"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Per Hour"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:id="@+id/p_per"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="italic"
+                    android:fontFamily="sans-serif"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="italic"
+                    android:fontFamily="sans-serif"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2000 "
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="italic"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/p_price"
+                    />
+
+            </LinearLayout>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
