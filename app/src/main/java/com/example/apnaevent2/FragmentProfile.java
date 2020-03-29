@@ -45,8 +45,6 @@ import androidx.fragment.app.Fragment;
         shareapp();
 
         return view;
-
-
     }
 
      private void shareapp() {
