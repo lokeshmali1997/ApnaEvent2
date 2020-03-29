@@ -19,13 +19,10 @@ import androidx.fragment.app.Fragment;
      View view;
 
 
-
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-
-                view = inflater.inflate(R.layout.fragment_profile, container, false);
-
-
+        view = inflater.inflate(R.layout.fragment_profile, container, false);
+        
         LinearLayout linearLayout = view.findViewById(R.id.linyer1);
 
 
