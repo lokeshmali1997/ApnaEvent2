@@ -33,14 +33,9 @@ public class UserfullProfile extends AppCompatActivity {
         ImageButton imageButton = findViewById(R.id.imgbtnback);
 
 
-        imageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
                 startActivity(new Intent(getApplicationContext(),MainActivity.class));
 
-            }
-        });
+
 
 
     }
@@ -62,9 +57,7 @@ public class UserfullProfile extends AppCompatActivity {
          textView7 = findViewById(R.id.etPhone);
 
 
-        etbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+
                 btnlogout.setVisibility(view.INVISIBLE);
                 etbtn.setVisibility(view.INVISIBLE);
                 textView.setVisibility(view.INVISIBLE);
@@ -79,10 +72,6 @@ public class UserfullProfile extends AppCompatActivity {
 
 
 
-            }
-        });
-
-
 
     }
 
@@ -92,10 +81,6 @@ public class UserfullProfile extends AppCompatActivity {
          savebtn = findViewById(R.id.btnsave);
          etbtn = findViewById(R.id.btnedit);
 
-
-        savebtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
 
 
@@ -113,8 +98,7 @@ public class UserfullProfile extends AppCompatActivity {
 
                 etbtn.setVisibility(view.VISIBLE);
 
-            }
-        });
+
 
 
     }
@@ -123,17 +107,13 @@ public class UserfullProfile extends AppCompatActivity {
 
         Button button = findViewById(R.id.btnlogout);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+
 
                 SharedPreferences sharedPreferences = getSharedPreferences("UserData",MODE_PRIVATE);
                 sharedPreferences.edit().clear().commit();
                 Intent i = new Intent(UserfullProfile.this,Login.class);
                 startActivity(i);
 
-            }
-        });
 
 
     }
