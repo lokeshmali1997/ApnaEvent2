@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -22,7 +23,8 @@ import com.google.firebase.database.ValueEventListener;
 public class Login extends AppCompatActivity {
 
     EditText etUsername,etPassword;
-    Button btnLogin;
+    Button btnLogin,btnForgot;
+
 
     DatabaseReference mUserMaster = FirebaseDatabase.getInstance().getReference().child("UserMaster");
     Intent intent;
@@ -38,6 +40,15 @@ public class Login extends AppCompatActivity {
         etUsername  = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
         btnLogin = findViewById(R.id.btnLogin);
+        btnForgot = (Button)findViewById(R.id.btnForgot);
+
+
+        btnForgot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               nextCall();
+            }
+        });
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,6 +78,9 @@ public class Login extends AppCompatActivity {
 
             }
         });
+
+
+
     }
 
 
@@ -96,34 +110,25 @@ public class Login extends AppCompatActivity {
 
     }
 
-    public void forgotpassword(View view) {
 
-        Button button = findViewById(R.id.btnforgot);
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Login.this,ForgotPassword.class);
-                startActivity(intent);
-
-
-
-            }
-        });
+    public void Signup(View view) {
+                Intent i = new Intent(this,SignUp.class);
+                startActivity(i);
 
     }
 
-    public void Signup(View view) {
+    /*
+    public void  ForgotPassword(View view)
+    {
+        Intent i = new Intent(this,ForgotPassword.class);
+        startActivity(i);
+    }
 
-        Button button = findViewById(R.id.btnloginsignip);
+     */
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Login.this,SignUp.class);
-                startActivity(i);
-            }
-        });
-
+    public void nextCall()
+    {
+        Intent i = new Intent(this,ForgotPassword.class);
+        startActivity(i);
     }
 }
