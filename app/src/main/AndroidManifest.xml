@@ -17,13 +17,13 @@
         <activity
             android:name=".VendorSearch"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".SplashSreen" />
+        <activity android:name=".VendorBooking" />
         <activity android:name=".Login" />
         <activity android:name=".full_view" />
         <activity android:name=".SignUp" />
         <activity android:name=".MainActivity"/>
 
-        <activity android:name=".VendorBooking">
+        <activity android:name=".SplashSreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
