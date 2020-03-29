@@ -1,24 +1,14 @@
 package com.example.apnaevent2;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract;
-import android.util.Log;
-import android.util.SparseBooleanArray;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -26,8 +16,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.List;
 
 public class VendorFullProfile extends AppCompatActivity implements ProductAdaptor.CheckBoxCheckedListener{
 
@@ -37,6 +27,7 @@ public class VendorFullProfile extends AppCompatActivity implements ProductAdapt
     DatabaseReference productRef = FirebaseDatabase.getInstance().getReference("Product");
     Query query;
     ArrayList<Product> productList;
+    ArrayList<Product> selectedList = new ArrayList<Product>();
     ProductAdaptor productAdaptor;
     NonScrollListView list_product;
     ArrayList<String> products = new ArrayList<>();
@@ -123,14 +114,32 @@ public class VendorFullProfile extends AppCompatActivity implements ProductAdapt
 
     public void CheckOut(View view)
     {
-
-
+        if(selectedList.isEmpty())
+        {
+            Toast.makeText(this, "Please select at least one product to Checkout", Toast.LENGTH_SHORT).show();
+        }
+        else
+        {
+            Intent i = new Intent(this,VendorBooking.class);
+            Bundle args = new Bundle();
+            args.putSerializable("selected",(Serializable)selectedList);
+            i.putExtra("bundle",args);
+            startActivity(i);
+        }
     }
 
     @Override
     public void getCheckBoxCheckedListener(int position) {
         Product product = productList.get(position);
-        Toast.makeText(this, product.getpName() , Toast.LENGTH_SHORT).show();
+        if(selectedList.contains(product))
+        {
+            selectedList.remove(product);
+        }
+        else
+        {
+            selectedList.add(product);
+        }
+
     }
 
 }
