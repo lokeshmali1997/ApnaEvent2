@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,7 +16,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="150dp"
             android:elevation="1dp"
             app:cardCornerRadius="10dp"
             android:layout_margin="5dp"
@@ -25,7 +25,7 @@
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="150dp"
                 >
                 <ImageView
                     android:layout_width="match_parent"
@@ -51,7 +51,8 @@
                         android:layout_marginBottom="20dp"
                         android:textColor="#fff"
                         android:textSize="25sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        />
 
                 </RelativeLayout>
 
@@ -72,12 +73,11 @@
                 android:text="Lokesh and company"
                 android:textColor="#02bd66"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:id="@+id/txtVName"/>
         </LinearLayout>
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+
 
        <LinearLayout
            android:layout_width="match_parent"
@@ -290,6 +290,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="15dp"
                     android:text="hggehlot777@gmail.com"
+                    android:id="@+id/txtVEmail"
                     android:textSize="16dp" />
             </LinearLayout>
 
@@ -312,7 +313,8 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="15dp"
                     android:text="91-9982743247"
-                    android:textSize="16dp" />
+                    android:textSize="16dp"
+                    android:id="@+id/txtVPhone"/>
             </LinearLayout>
 
             <LinearLayout
@@ -336,6 +338,7 @@
                     android:text="32 Shiv conlony jakhamaji
                                   road sumerpir,306902"
                     android:textSize="16dp"
+                    android:id="@+id/txtVAdd"
                     android:inputType="textMultiLine"
                     />
             </LinearLayout>
@@ -347,7 +350,7 @@
                android:layout_width="360dp"
                android:layout_height="wrap_content"
                android:layout_gravity="center"
-               android:layout_marginTop="25dp"
+               android:layout_marginTop="10dp"
                android:orientation="vertical">
 
                <TextView
@@ -360,102 +363,39 @@
                    android:textStyle="bold" />
            </LinearLayout>
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:elevation="1dp"
-                app:cardCornerRadius="10dp"
-                android:layout_margin="20dp"
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:elevation="1dp"
+               app:cardCornerRadius="10dp"
+               android:layout_margin="15dp"
 
-                >
+               >
+       <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+>
+           <ListView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/list_product">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:padding="15dp"
-            >
+           </ListView>
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/deco2"
-                    android:scaleType="centerCrop"
 
-                    />
+</LinearLayout>
+           </ScrollView>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginLeft="20dp"
-
-                    >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Horse"
-                        android:textSize="16dp"
-                        android:textColor="@color/black"
-                        android:fontFamily="sans-serif"
-                        android:textStyle="italic"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Per Hour"
-                        android:textColor="@color/black"
-                        android:textSize="16dp"
-                        android:layout_marginTop="5dp"
-                        android:textStyle="italic"
-                        android:fontFamily="sans-serif"
-
-                        />
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginLeft="20dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Price"
-                        android:textColor="@color/black"
-                        android:textSize="16dp"
-                        android:textStyle="italic"
-                        android:fontFamily="sans-serif"
-                        />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="2000 "
-                    android:layout_marginTop="5dp"
-                    android:textColor="@color/black"
-                    android:textSize="16dp"
-                    android:textStyle="italic"
-                    android:fontFamily="sans-serif"
-                    />
-
-                </LinearLayout>
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginTop="10dp"/>
-
-            </LinearLayout>
-            </androidx.cardview.widget.CardView>
+           </androidx.cardview.widget.CardView>
 
            <Button
                android:layout_width="300dp"
                android:layout_height="50dp"
-               android:layout_marginTop="50dp"
+               android:layout_marginTop="20dp"
                android:layout_marginBottom="50dp"
                android:textStyle="bold"
                android:layout_gravity="center_horizontal"
@@ -463,12 +403,11 @@
                android:text="CheckOut"
                android:textColor="#fff" />
 
-
-
        </LinearLayout>
-        </ScrollView>
+
+
 
         </LinearLayout>
 
 
-</RelativeLayout>
+</LinearLayout>

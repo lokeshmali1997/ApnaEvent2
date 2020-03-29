@@ -54,7 +54,8 @@ public class VendorAdaptor extends BaseAdapter {
             email.setText(vendor.getEmail());
             ratingBar.setRating(vendor.getRating());
             name.setTag(vendor.getId());
+            email.setTag(vendor.getAdd());
 
-        return convertView;
+            return convertView;
     }
 }
