@@ -21,8 +21,8 @@
         <activity android:name=".Login" />
         <activity android:name=".full_view" />
         <activity android:name=".SignUp" />
-        <activity android:name=".MainActivity">
-              </activity>
+        <activity android:name=".MainActivity"/>
+
         <activity android:name=".SplashSreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

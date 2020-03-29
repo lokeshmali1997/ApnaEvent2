@@ -114,18 +114,17 @@
                             android:fontFamily="sans-serif-light"/>
 
                         <Button
-                            android:id="@+id/btnforgot"
+                            android:id="@+id/btnForgot"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:background="@drawable/border"
                             android:fontFamily="sans-serif-light"
-                            android:onClick="forgotpassword"
                             android:text="Forgot Password ?"
+                            android:onClick="ForgotPassword"
                             android:textAlignment="textEnd"
                             android:textSize="12sp"
-                            android:textStyle="bold"
-                            tools:ignore="OnClick" />
+                            android:textStyle="bold"/>
 
 
 
@@ -138,7 +137,6 @@
 
                             <Button
 
-                                android:id="@+id/btnloginsignip"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"

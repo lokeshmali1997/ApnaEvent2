@@ -3,6 +3,7 @@ package com.example.apnaevent2;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -111,6 +112,25 @@ public class UserfullProfile extends AppCompatActivity {
                 textView3.setVisibility(view.VISIBLE);
 
                 etbtn.setVisibility(view.VISIBLE);
+
+            }
+        });
+
+
+    }
+
+    public void logout(View view) {
+
+        Button button = findViewById(R.id.btnlogout);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                SharedPreferences sharedPreferences = getSharedPreferences("UserData",MODE_PRIVATE);
+                sharedPreferences.edit().clear().commit();
+                Intent i = new Intent(UserfullProfile.this,Login.class);
+                startActivity(i);
 
             }
         });
