@@ -6,7 +6,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/apnalogo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -17,13 +17,13 @@
         <activity
             android:name=".VendorSearch"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".VendorBooking" />
+        <activity android:name=".SplashSreen" />
         <activity android:name=".Login" />
         <activity android:name=".full_view" />
         <activity android:name=".SignUp" />
         <activity android:name=".MainActivity"/>
 
-        <activity android:name=".SplashSreen">
+        <activity android:name=".VendorBooking">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
