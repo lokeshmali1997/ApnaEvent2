@@ -8,7 +8,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.util.Log;
+import android.util.SparseBooleanArray;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,8 +27,9 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class VendorFullProfile extends AppCompatActivity {
+public class VendorFullProfile extends AppCompatActivity implements ProductAdaptor.CheckBoxCheckedListener{
 
     TextView txtVName,txtVEmail,txtVPhone,txtVAdd;
     String v_id;
@@ -32,8 +38,9 @@ public class VendorFullProfile extends AppCompatActivity {
     Query query;
     ArrayList<Product> productList;
     ProductAdaptor productAdaptor;
-    ListView list_product;
+    NonScrollListView list_product;
     ArrayList<String> products = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,13 +59,15 @@ public class VendorFullProfile extends AppCompatActivity {
 
 
         query = vendorproductRoot.child(v_id);
-        list_product = (ListView)findViewById(R.id.list_product);
+        list_product = (NonScrollListView) findViewById(R.id.list_product);
 
 
         productList = new ArrayList<Product>();
         productAdaptor = new ProductAdaptor(this, productList);
 
         list_product.setAdapter(productAdaptor);
+
+        productAdaptor.setCheckedListener(this);
 
 
         query.addValueEventListener(new ValueEventListener() {
@@ -68,9 +77,6 @@ public class VendorFullProfile extends AppCompatActivity {
                 {
 
                     products.add(ds.getKey());
-                    Toast.makeText(VendorFullProfile.this, ds.getKey(), Toast.LENGTH_SHORT).show();
-
-
                 }
                 productAdaptor.notifyDataSetChanged();
 
@@ -99,8 +105,6 @@ public class VendorFullProfile extends AppCompatActivity {
                         product.setpPer(ds.child("pper").getValue().toString());
 
                         productList.add(product);
-                        Toast.makeText(VendorFullProfile.this, ds.child("pname").getValue().toString(), Toast.LENGTH_SHORT).show();
-                        System.out.println(ds.child("pname").getValue());
 
                     }
 
@@ -115,11 +119,18 @@ public class VendorFullProfile extends AppCompatActivity {
         });
 
 
+    }
 
-
-
-
+    public void CheckOut(View view)
+    {
 
 
     }
+
+    @Override
+    public void getCheckBoxCheckedListener(int position) {
+        Product product = productList.get(position);
+        Toast.makeText(this, product.getpName() , Toast.LENGTH_SHORT).show();
+    }
+
 }
