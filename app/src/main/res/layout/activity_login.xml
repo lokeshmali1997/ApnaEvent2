@@ -97,6 +97,7 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:hint="Enter Password"
+                            android:inputType="textPassword"
                             android:id="@+id/etPassword"
                             android:backgroundTint="@color/colorPrimary"
                             />

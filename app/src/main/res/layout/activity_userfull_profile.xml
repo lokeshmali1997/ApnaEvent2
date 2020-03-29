@@ -246,7 +246,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Username"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="20dp"
 
                     android:textSize="13sp"
                     />
@@ -257,7 +257,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Lokesh "
+                    android:text=" "
                     android:textSize="14dp"
                     android:textColor="@color/black"
                     />
@@ -274,7 +274,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="0dp"
                     android:text="Email"
                     android:textSize="13sp" />
 
@@ -284,7 +284,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="lokeshmali1997@gmail.com "
+                    android:text=" "
                     android:textSize="14sp"
                     android:textColor="@color/black"
                     />
@@ -303,8 +303,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Password"
-                    android:inputType="textPassword"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="0dp"
                     android:textSize="13sp"
                     />
 
@@ -326,13 +325,14 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/colorPrimary"
                     android:hint="Enter Password"
+                    android:inputType="textPassword"
                     android:padding="8dp"
                     android:visibility="invisible"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Mobile Number"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="0dp"
                     android:textSize="16sp"
                     />
 
@@ -341,7 +341,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="7020558624 "
+                    android:text=""
                     android:textSize="14dp"
                     android:textColor="@color/black"
                     />

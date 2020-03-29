@@ -44,6 +44,7 @@ public class FragmentProfile extends Fragment {
 
             }
         });
+        myorder();
         googlemap();
         shareapp();
 
@@ -51,7 +52,9 @@ public class FragmentProfile extends Fragment {
 
     }
 
-     @Override
+
+
+    @Override
      public void onStart() {
          super.onStart();
          SharedPreferences sharedPreferences = this.getActivity().getSharedPreferences("UserData", Context.MODE_PRIVATE);
@@ -74,31 +77,25 @@ public class FragmentProfile extends Fragment {
 
      }
 
-     private void shareapp() {
+    private void myorder() {
 
-        LinearLayout layout = view.findViewById(R.id.linyer3);
+        LinearLayout layout = view.findViewById(R.id.linyer2);
 
         layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-
-                Intent shareIntent = new Intent(Intent.ACTION_SEND);
-                shareIntent.setType("text/plain");
-                shareIntent.putExtra(Intent.EXTRA_SUBJECT,"Insert Subject here");
-                String app_url = "http://play.google.com/store/apps/details?id=com.example.administrator";
-                shareIntent.putExtra(Intent.EXTRA_TEXT,app_url);
-                startActivity(Intent.createChooser(shareIntent,"Share via"));
+                Intent intent = new Intent(getActivity(),MyOrder.class);
+                startActivity(intent);
             }
         });
 
-     }
+    }
+
 
      private void googlemap() {
 
         String uri = "geo:18.5177542,73.8126939?q=MIT World Peace University, Paud Road, Rambaug Colony, Kothrud, Pune, Maharashtra";
-         LinearLayout layout  = view.findViewById(R.id.linyer2);
+         LinearLayout layout  = view.findViewById(R.id.linyer3);
 
          layout.setOnClickListener(new View.OnClickListener() {
              @Override
@@ -116,6 +113,27 @@ public class FragmentProfile extends Fragment {
          });
 
      }
+
+    private void shareapp() {
+
+        LinearLayout layout = view.findViewById(R.id.linyer4);
+
+        layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+
+                Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                shareIntent.setType("text/plain");
+                shareIntent.putExtra(Intent.EXTRA_SUBJECT,"Insert Subject here");
+                String app_url = "http://play.google.com/store/apps/details?id=com.example.administrator";
+                shareIntent.putExtra(Intent.EXTRA_TEXT,app_url);
+                startActivity(Intent.createChooser(shareIntent,"Share via"));
+            }
+        });
+
+    }
 
 
  }

@@ -82,6 +82,7 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@color/colorPrimary"
                             android:hint="Enter name"
+                            android:inputType="text"
                             android:padding="8dp" />
 
                         <TextView
@@ -99,6 +100,7 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@color/colorPrimary"
                             android:hint="Enter Email"
+                            android:inputType="textEmailAddress"
                             android:padding="8dp" />
                          <TextView
                              android:layout_width="match_parent"
@@ -131,6 +133,7 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="@color/colorPrimary"
                             android:hint="Enter Number"
+                            android:inputType="number"
                             android:padding="8dp" />
 
                         <Button

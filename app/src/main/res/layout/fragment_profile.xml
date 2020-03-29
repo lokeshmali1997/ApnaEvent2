@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:fontFamily="sans-serif-light"
-                android:text="Lokesh"
+                android:text=""
                 android:textSize="16dp"
                 android:id="@+id/txtUser"
                 android:layout_marginTop="50dp"/>
@@ -59,7 +59,7 @@
                 android:textStyle="bold"
                 android:layout_marginTop="5dp"
                 android:id="@+id/txtMob"
-                android:text="7020558624"
+                android:text=""
                 android:textSize="14dp"/>
 
         </LinearLayout>

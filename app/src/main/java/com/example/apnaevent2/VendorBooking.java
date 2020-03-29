@@ -34,7 +34,7 @@ public class VendorBooking extends AppCompatActivity {
 
 
 
-/*
+
 
         fromDateET.setInputType(InputType.TYPE_NULL);
         fromDateET.setOnClickListener(new View.OnClickListener() {
@@ -57,7 +57,7 @@ public class VendorBooking extends AppCompatActivity {
         });
 
 
-*/
+
     }
 
 
