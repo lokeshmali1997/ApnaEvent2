@@ -15,7 +15,10 @@
         <item name="android:maxLines">1</item>
     </style>
 
-
+    <string name="Rs">\u20B9</string>
+    <string name="font1">Arial</string>
+    <string name="font2">Verdana</string>
+    <string name="font3">Candara</string>
 
 
 </resources>

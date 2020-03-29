@@ -40,7 +40,7 @@ import androidx.fragment.app.Fragment;
             }
         });
 
-
+        myorder();
         googlemap();
         shareapp();
 
@@ -49,9 +49,22 @@ import androidx.fragment.app.Fragment;
 
     }
 
+     private void myorder() {
+
+         LinearLayout layout = view.findViewById(R.id.linyer2);
+
+         layout.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent intent = new Intent(getActivity(),MyOrder.class);
+                 startActivity(intent);
+             }
+         });
+     }
+
      private void shareapp() {
 
-        LinearLayout layout = view.findViewById(R.id.linyer3);
+        LinearLayout layout = view.findViewById(R.id.linyer4);
 
         layout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,7 +86,7 @@ import androidx.fragment.app.Fragment;
      private void googlemap() {
 
         String uri = "geo:18.5177542,73.8126939?q=MIT World Peace University, Paud Road, Rambaug Colony, Kothrud, Pune, Maharashtra";
-         LinearLayout layout  = view.findViewById(R.id.linyer2);
+         LinearLayout layout  = view.findViewById(R.id.linyer3);
 
          layout.setOnClickListener(new View.OnClickListener() {
              @Override
