@@ -1,8 +1,6 @@
 package com.example.apnaevent2;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
@@ -11,29 +9,26 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+ public class FragmentProfile extends Fragment {
 
-public class FragmentProfile extends Fragment {
+     View view;
 
-    View view;
-    TextView txtUser,txtMob;
-    DatabaseReference userRef = FirebaseDatabase.getInstance().getReference("UserMaster");
+
 
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_profile, container, false);
+
+
+                view = inflater.inflate(R.layout.fragment_profile, container, false);
+
+
         LinearLayout linearLayout = view.findViewById(R.id.linyer1);
-        txtUser = view.findViewById(R.id.txtUser);
-        txtMob = view.findViewById(R.id.txtMob);
+
+
         linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,35 +39,15 @@ public class FragmentProfile extends Fragment {
 
             }
         });
+
+
         googlemap();
         shareapp();
 
         return view;
 
+
     }
-
-     @Override
-     public void onStart() {
-         super.onStart();
-         SharedPreferences sharedPreferences = this.getActivity().getSharedPreferences("UserData", Context.MODE_PRIVATE);
-         String uid = sharedPreferences.getString("UserId","");
-
-         userRef.child(uid).addValueEventListener(new ValueEventListener() {
-             @Override
-             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                txtUser.setText(dataSnapshot.child("username").getValue().toString());
-                txtMob.setText(dataSnapshot.child("phone").getValue().toString());
-             }
-
-             @Override
-             public void onCancelled(@NonNull DatabaseError databaseError) {
-
-             }
-         });
-
-
-
-     }
 
      private void shareapp() {
 
