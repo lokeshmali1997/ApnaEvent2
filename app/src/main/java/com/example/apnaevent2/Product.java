@@ -1,6 +1,8 @@
 package com.example.apnaevent2;
 
-public class Product {
+import java.io.Serializable;
+
+public class Product implements Serializable {
     private String pId;
     private String pName;
     private String pPrice;
@@ -14,7 +16,7 @@ public class Product {
 
     private String pPer;
 
-    public Product() {
+    public Product()  {
     }
 
     public String getpId() {

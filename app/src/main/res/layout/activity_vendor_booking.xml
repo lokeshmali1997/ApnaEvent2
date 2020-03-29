@@ -91,18 +91,18 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/Date123"
+                android:id="@+id/fromDate"
                 android:clickable="true"
-                android:editable="false"
+
                 android:hint="Select Start Date" />
 
             <EditText
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/Date1234"
+                android:id="@+id/toDate"
                 android:clickable="true"
-                android:editable="false"
+
                 android:hint="Select End Date" />
 
         </LinearLayout>

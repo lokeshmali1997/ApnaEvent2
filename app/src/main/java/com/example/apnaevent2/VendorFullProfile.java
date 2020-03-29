@@ -1,19 +1,14 @@
 package com.example.apnaevent2;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract;
-import android.util.Log;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -21,9 +16,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class VendorFullProfile extends AppCompatActivity {
+public class VendorFullProfile extends AppCompatActivity implements ProductAdaptor.CheckBoxCheckedListener{
 
     TextView txtVName,txtVEmail,txtVPhone,txtVAdd;
     String v_id;
@@ -31,9 +27,11 @@ public class VendorFullProfile extends AppCompatActivity {
     DatabaseReference productRef = FirebaseDatabase.getInstance().getReference("Product");
     Query query;
     ArrayList<Product> productList;
+    ArrayList<Product> selectedList = new ArrayList<Product>();
     ProductAdaptor productAdaptor;
-    ListView list_product;
+    NonScrollListView list_product;
     ArrayList<String> products = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,13 +50,15 @@ public class VendorFullProfile extends AppCompatActivity {
 
 
         query = vendorproductRoot.child(v_id);
-        list_product = (ListView)findViewById(R.id.list_product);
+        list_product = (NonScrollListView) findViewById(R.id.list_product);
 
 
         productList = new ArrayList<Product>();
         productAdaptor = new ProductAdaptor(this, productList);
 
         list_product.setAdapter(productAdaptor);
+
+        productAdaptor.setCheckedListener(this);
 
 
         query.addValueEventListener(new ValueEventListener() {
@@ -68,9 +68,6 @@ public class VendorFullProfile extends AppCompatActivity {
                 {
 
                     products.add(ds.getKey());
-                    Toast.makeText(VendorFullProfile.this, ds.getKey(), Toast.LENGTH_SHORT).show();
-
-
                 }
                 productAdaptor.notifyDataSetChanged();
 
@@ -99,8 +96,6 @@ public class VendorFullProfile extends AppCompatActivity {
                         product.setpPer(ds.child("pper").getValue().toString());
 
                         productList.add(product);
-                        Toast.makeText(VendorFullProfile.this, ds.child("pname").getValue().toString(), Toast.LENGTH_SHORT).show();
-                        System.out.println(ds.child("pname").getValue());
 
                     }
 
@@ -115,11 +110,36 @@ public class VendorFullProfile extends AppCompatActivity {
         });
 
 
+    }
 
+    public void CheckOut(View view)
+    {
+        if(selectedList.isEmpty())
+        {
+            Toast.makeText(this, "Please select at least one product to Checkout", Toast.LENGTH_SHORT).show();
+        }
+        else
+        {
+            Intent i = new Intent(this,VendorBooking.class);
+            Bundle args = new Bundle();
+            args.putSerializable("selected",(Serializable)selectedList);
+            i.putExtra("bundle",args);
+            startActivity(i);
+        }
+    }
 
-
-
-
+    @Override
+    public void getCheckBoxCheckedListener(int position) {
+        Product product = productList.get(position);
+        if(selectedList.contains(product))
+        {
+            selectedList.remove(product);
+        }
+        else
+        {
+            selectedList.add(product);
+        }
 
     }
+
 }
