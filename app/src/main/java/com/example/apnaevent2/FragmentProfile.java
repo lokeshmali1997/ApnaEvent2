@@ -39,8 +39,7 @@ import androidx.fragment.app.Fragment;
 
             }
         });
-
-
+        
         googlemap();
         shareapp();
 
