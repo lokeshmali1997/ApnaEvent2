@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:elevation="1dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+            android:focusable="false"
+            android:descendantFocusability="blocksDescendants"
+
+            >
+
+            <TextView
+
+                android:id="@+id/txtVendorNameOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lokesh and comapny"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_marginTop="0dp"
+                android:id="@+id/txtVendorPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7020552624"
+                android:textSize="16dp"/>
+
+
+
+
+            <View
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc"/>
+
+
+
+            <TextView
+                android:layout_marginTop="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BOOKING ID"
+
+                android:fontFamily="sans-serif"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_marginTop="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ap1001"
+                android:id="@+id/txtBookingId"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_marginTop="0dp"
+                android:id="@+id/txtorderproductname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horse"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Date"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif"
+                android:textSize="15sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:id="@+id/txtstartdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 Mar 2020 "
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To "
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:id="@+id/txtenddate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25 Mar 2020 "
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL AMOUNT"
+                android:fontFamily="sans-serif"
+                android:textSize="15sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rs"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:id="@+id/txtTotalAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10000"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

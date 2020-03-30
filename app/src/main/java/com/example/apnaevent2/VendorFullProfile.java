@@ -66,11 +66,9 @@ public class VendorFullProfile extends AppCompatActivity implements ProductAdapt
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for(DataSnapshot ds : dataSnapshot.getChildren())
                 {
-
                     products.add(ds.getKey());
                 }
                 productAdaptor.notifyDataSetChanged();
-
             }
 
             @Override
@@ -85,20 +83,15 @@ public class VendorFullProfile extends AppCompatActivity implements ProductAdapt
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for(DataSnapshot ds : dataSnapshot.getChildren())
                 {
-
                     if(products.contains(ds.getKey()))
                     {
-
                         Product product = new Product();
                         product.setpId(ds.getKey());
                         product.setpName(ds.child("pname").getValue().toString());
                         product.setpPrice(ds.child("pprice").getValue().toString());
                         product.setpPer(ds.child("pper").getValue().toString());
-
                         productList.add(product);
-
                     }
-
                 }
                 productAdaptor.notifyDataSetChanged();
             }
@@ -121,9 +114,10 @@ public class VendorFullProfile extends AppCompatActivity implements ProductAdapt
         else
         {
             Intent i = new Intent(this,VendorBooking.class);
-            Bundle args = new Bundle();
-            args.putSerializable("selected",(Serializable)selectedList);
-            i.putExtra("bundle",args);
+            i.putExtra("vid",v_id);
+            i.putExtra("selected",(Serializable)selectedList);
+            i.putExtra("vname",txtVName.getText());
+
             startActivity(i);
         }
     }

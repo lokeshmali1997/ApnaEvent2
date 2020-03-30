@@ -5,6 +5,7 @@ import java.io.Serializable;
 public class Product implements Serializable {
     private String pId;
     private String pName;
+    private String pPer;
     private String pPrice;
 
     public Product(String pId, String pName, String pPrice, String pPer) {
@@ -14,7 +15,7 @@ public class Product implements Serializable {
         this.pPer = pPer;
     }
 
-    private String pPer;
+
 
     public Product()  {
     }
