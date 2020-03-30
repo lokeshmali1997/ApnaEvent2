@@ -36,6 +36,22 @@ public class VendorFullProfile extends AppCompatActivity implements ProductAdapt
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vendor_full_profile);
+
+
+
+
+
+
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.mipmap.apna1);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+
+
+
         txtVName = findViewById(R.id.txtVName);
         txtVEmail = findViewById(R.id.txtVEmail);
         txtVPhone = findViewById(R.id.txtVPhone);
