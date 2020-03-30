@@ -32,7 +32,9 @@ public class MainActivity extends AppCompatActivity {
 //toolbar = findViewById(R.id.mytool);
 
 
-
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.mipmap.apna1);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
 
 
         getSupportFragmentManager().beginTransaction().
