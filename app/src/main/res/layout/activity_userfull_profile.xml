@@ -33,7 +33,7 @@
                 android:src="@drawable/ic_arrow_back_black_24dp"
                 tools:ignore="OnClick" />
 
-              
+
 
             <Button
                 android:id="@+id/btnedit"
