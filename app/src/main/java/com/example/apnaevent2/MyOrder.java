@@ -29,6 +29,12 @@ public class MyOrder extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_order);
+         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setTitle("");
+        getSupportActionBar().setLogo(R.mipmap.apna1);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+
         orderList = findViewById(R.id.orderList);
         myorderList = new ArrayList<OrderListElements>();
         orderList.setHasFixedSize(true);

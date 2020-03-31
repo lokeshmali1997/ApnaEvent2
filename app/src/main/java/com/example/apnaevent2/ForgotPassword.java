@@ -11,8 +11,10 @@ import android.widget.LinearLayout;
 
 public class ForgotPassword extends AppCompatActivity {
 
-    LinearLayout layout1;
-    LinearLayout layout2;
+    EditText etemail,verifyotp,etnewpass,etconfpass;
+    Button btnsendemail,btnverifyitp,btnsave;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,31 +24,42 @@ public class ForgotPassword extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
 
-        layout1 = (LinearLayout) findViewById(R.id.linyer1);
-        layout2 = findViewById(R.id.linyer2);
-
+        etemail = findViewById(R.id.etEmailsend);
+        verifyotp = findViewById(R.id.etotp);
+        etnewpass = findViewById(R.id.etnewpass);
+        etconfpass = findViewById(R.id.etcomfnewPass);
+        btnsendemail = findViewById(R.id.btnsendotp);
+        btnsendemail = findViewById(R.id.btnsendotp);
+        btnverifyitp = findViewById(R.id.btnverifyotp);
+        btnsave = findViewById(R.id.btnforgotsave);
 
     }
 
 
     public void btnSendEmaul(View view) {
 
-        layout1.setVisibility(View.INVISIBLE);
-        layout2.setVisibility(View.VISIBLE);
+        etemail.setVisibility(View.INVISIBLE);
+        btnsendemail.setVisibility(View.INVISIBLE);
+        verifyotp.setVisibility(View.VISIBLE);
+        btnverifyitp.setVisibility(View.VISIBLE);
+
 
     }
-/*
+
     public void btnVerifyOtp(View view) {
 
-        LinearLayout layout2  = findViewById(R.id.linyer2);
-        LinearLayout layout3  = findViewById(R.id.linyer3);
 
-        layout3.setVisibility(View.VISIBLE);
-        layout2.setVisibility(View.INVISIBLE);
+        verifyotp.setVisibility(View.INVISIBLE);
+        btnverifyitp.setVisibility(View.INVISIBLE);
+        etnewpass.setVisibility(View.VISIBLE);
+        etconfpass.setVisibility(View.VISIBLE);
+        btnsave.setVisibility(View.VISIBLE);
 
     }
-    */
+
 
     public void btnsave(View view) {
     }
+
+
 }
