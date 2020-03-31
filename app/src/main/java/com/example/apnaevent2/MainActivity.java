@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setTitle("");
         getSupportActionBar().setLogo(R.mipmap.apna1);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
 

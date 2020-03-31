@@ -54,7 +54,10 @@ public class VendorBooking extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vendor_booking);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setTitle("");
+        getSupportActionBar().setLogo(R.mipmap.apna1);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
 
         fromDateET = findViewById(R.id.fromDate);
         toDateEtxt = findViewById(R.id.toDate);

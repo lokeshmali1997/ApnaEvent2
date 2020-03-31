@@ -14,6 +14,7 @@ public class full_view extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setTitle("");
         getSupportActionBar().setLogo(R.mipmap.apna1);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
 

@@ -42,9 +42,9 @@ public class VendorSearch extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setTitle("");
         getSupportActionBar().setLogo(R.mipmap.apna1);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
-
 
 
 
