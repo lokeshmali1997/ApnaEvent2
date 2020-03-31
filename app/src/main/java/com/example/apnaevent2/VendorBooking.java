@@ -173,7 +173,8 @@ public class VendorBooking extends AppCompatActivity {
             {
                 book_ProductRef.child(String.valueOf(bookid)).child(p.getpId()).setValue(p.getpName());
             }
-            Intent i = new Intent();
+            Intent i = new Intent(this,MyOrder.class);
+            startActivity(i);
 
 
         }
