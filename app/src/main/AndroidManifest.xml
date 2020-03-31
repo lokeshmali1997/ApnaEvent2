@@ -11,8 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".MyOrder"/>
+        <activity android:name=".MyOrder" />
         <activity android:name=".ForgotPassword" />
         <activity android:name=".UserfullProfile" />
         <activity android:name=".VendorFullProfile" />
@@ -23,8 +22,7 @@
         <activity android:name=".Login" />
         <activity android:name=".full_view" />
         <activity android:name=".SignUp" />
-        <activity android:name=".MainActivity"/>
-
+        <activity android:name=".MainActivity" />
         <activity android:name=".SplashSreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
