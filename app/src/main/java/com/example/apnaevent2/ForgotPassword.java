@@ -8,11 +8,14 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class ForgotPassword extends AppCompatActivity {
 
     EditText etemail,verifyotp,etnewpass,etconfpass;
-    Button btnsendemail,btnverifyitp,btnsave;
+    Button btnsendemail,btnverifyitp,btnsave,btnResend;
+    TextView txtCheck;
+
 
 
     @Override
@@ -32,7 +35,8 @@ public class ForgotPassword extends AppCompatActivity {
         btnsendemail = findViewById(R.id.btnsendotp);
         btnverifyitp = findViewById(R.id.btnverifyotp);
         btnsave = findViewById(R.id.btnforgotsave);
-
+        btnResend = findViewById(R.id.btnResend);
+        txtCheck = findViewById(R.id.txtCheck);
     }
 
 
