@@ -26,7 +26,8 @@ public class FragmentGallery extends Fragment {
     GridView gridView;
 
     ArrayList<Integer> mImageIds = new ArrayList<>(Arrays.asList(
-            R.drawable.deco5,R.drawable.dj0,R.drawable.food5,R.drawable.h3,R.drawable.dj7
+            R.drawable.deco5,R.drawable.dj0,R.drawable.food5,R.drawable.h3,R.drawable.dj7,R.drawable.dj4,R.drawable.food2,R.drawable.dj5
+            ,R.drawable.food3
     ));
 
     @Nullable

@@ -12,6 +12,12 @@ public class full_view extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_full_view);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setTitle("");
+        getSupportActionBar().setLogo(R.mipmap.apna1);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+
 
         ImageView imageView = findViewById(R.id.img_full);
         int img_id = getIntent().getExtras().getInt("img_id");

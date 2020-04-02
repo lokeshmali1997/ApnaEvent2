@@ -6,25 +6,24 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@drawable/apnalogo"
+        android:label="Apna Event"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".full_view">
-
-        </activity>
-        <activity
-            android:name=".VendorProfile"
-            android:parentActivityName=".VendorSearch"></activity>
+        <activity android:name=".MyOrder" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".UserfullProfile" />
+        <activity android:name=".VendorFullProfile" />
         <activity
             android:name=".VendorSearch"
-            android:parentActivityName=".MainActivity"></activity>
-        <activity
-            android:name=".VendorBooking"
-            android:parentActivityName=".VendorProfile"></activity>
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".VendorBooking" />
         <activity android:name=".Login" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".full_view" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SplashSreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

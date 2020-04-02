@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -22,10 +23,11 @@ import com.google.firebase.database.ValueEventListener;
 public class Login extends AppCompatActivity {
 
     EditText etUsername,etPassword;
-    Button btnLogin;
+    Button btnLogin,btnForgot;
+
 
     DatabaseReference mUserMaster = FirebaseDatabase.getInstance().getReference().child("UserMaster");
-
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,15 @@ public class Login extends AppCompatActivity {
         etUsername  = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
         btnLogin = findViewById(R.id.btnLogin);
+        btnForgot = (Button)findViewById(R.id.btnForgot);
+
+
+        btnForgot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               nextCall();
+            }
+        });
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +63,6 @@ public class Login extends AppCompatActivity {
                             {
                                 if(data.child("pass").getValue().equals(etPassword.getText().toString()))
                                 {
-                                    Toast.makeText(Login.this, data.getKey().toString(), Toast.LENGTH_SHORT).show();
                                     sharedUserLogin(data.getKey().toString());
                                 }
 
@@ -68,6 +78,9 @@ public class Login extends AppCompatActivity {
 
             }
         });
+
+
+
     }
 
 
@@ -78,7 +91,7 @@ public class Login extends AppCompatActivity {
 
             if(sh.contains("UserId"))
             {
-                Intent intent = new Intent(this,MainActivity.class);
+                intent = new Intent(this,MainActivity.class);
                 startActivity(intent);
             }
 
@@ -88,7 +101,34 @@ public class Login extends AppCompatActivity {
     {
         SharedPreferences sharedPreferences = getSharedPreferences("UserData",MODE_PRIVATE);
         SharedPreferences.Editor myEdit = sharedPreferences.edit();
+
+
         myEdit.putString("UserId",id);
         myEdit.commit();
+        intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+
+    }
+
+
+    public void Signup(View view) {
+                Intent i = new Intent(this,SignUp.class);
+                startActivity(i);
+
+    }
+
+    /*
+    public void  ForgotPassword(View view)
+    {
+        Intent i = new Intent(this,ForgotPassword.class);
+        startActivity(i);
+    }
+
+     */
+
+    public void nextCall()
+    {
+        Intent i = new Intent(this,ForgotPassword.class);
+        startActivity(i);
     }
 }

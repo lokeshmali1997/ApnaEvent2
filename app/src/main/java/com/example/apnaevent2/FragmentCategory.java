@@ -24,10 +24,32 @@ View view;
         decorationevent();
         foodevent();
         logisticevent();
+        otherevent();
 
         
         return view;
                 
+    }
+
+    private void otherevent() {
+
+
+
+        ImageButton imageButton = view.findViewById(R.id.imgbtnother);
+
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent =  new Intent(view.getContext(),VendorSearch.class);
+                intent.putExtra("cat","4");
+                startActivity(intent);
+            }
+        });
+
+
+
+
     }
 
     private void logisticevent() {
@@ -36,6 +58,7 @@ View view;
             @Override
             public void onClick(View view) {
                 Intent intent =  new Intent(view.getContext(),VendorSearch.class);
+                intent.putExtra("cat","3");
                 startActivity(intent);
             }
         });
@@ -47,6 +70,7 @@ View view;
             @Override
             public void onClick(View view) {
                 Intent intent =  new Intent(view.getContext(),VendorSearch.class);
+                intent.putExtra("cat","1");
                 startActivity(intent);
             }
         });
@@ -58,6 +82,7 @@ View view;
             @Override
             public void onClick(View view) {
                 Intent intent =  new Intent(view.getContext(),VendorSearch.class);
+                intent.putExtra("cat","2");
                 startActivity(intent);
             }
         });

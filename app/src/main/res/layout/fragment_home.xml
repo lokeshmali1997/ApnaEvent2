@@ -49,194 +49,7 @@
 
             </RelativeLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:elevation="1dp"
-                    app:cardCornerRadius="8dp"
-                    android:layout_margin="5dp"
-
-                    >
-
-                    <FrameLayout
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        >
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="90dp"
-                            android:src="@drawable/deco11"
-                            android:background="#00000000"
-                            android:scaleType="centerCrop"
-                            android:enabled="true"
-                            android:clickable="true"
-                            />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:text=""
-                                android:textSize="14sp"
-                                android:gravity="center"
-                                android:background="#00000000"
-                                android:textColor="#000000"
-                                android:enabled="false"
-                                android:clickable="false"
-                                android:layout_weight="1"
-                                />
-
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:elevation="1dp"
-                    app:cardCornerRadius="8dp"
-                    android:layout_margin="5dp"
-
-
-                    >
-
-                    <FrameLayout
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        >
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="90dp"
-                            android:src="@drawable/dj5"
-                            android:background="#00000000"
-                            android:enabled="true"
-                            android:scaleType="centerCrop"
-                            android:clickable="true"
-                            />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:text=""
-                                android:textSize="14sp"
-                                android:gravity="center"
-                                android:background="#00000000"
-                                android:textColor="#000000"
-                                android:enabled="false"
-                                android:clickable="false"
-                                android:layout_weight="1"
-                                />
-
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:elevation="1dp"
-                    app:cardCornerRadius="8dp"
-                    android:layout_margin="5dp"
-
-                    >
-
-                    <FrameLayout
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        >
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/food2"
-                            android:background="#00000000"
-                            android:enabled="true"
-                            android:scaleType="centerCrop"
-                            android:clickable="true"
-                            />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:text=""
-                                android:textSize="14sp"
-                                android:gravity="center"
-                                android:background="#00000000"
-                                android:textColor="#000000"
-                                android:enabled="false"
-                                android:clickable="false"
-                                android:layout_weight="1"
-                                />
-
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:elevation="1dp"
-                    app:cardCornerRadius="8dp"
-                    android:layout_margin="5dp"
-
-                    >
-
-                    <FrameLayout
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        >
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:background="#00000000"
-                            android:clickable="true"
-                            android:enabled="true"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/dl4" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:text=""
-                                android:textSize="14sp"
-                                android:gravity="center"
-                                android:background="#00000000"
-                                android:textColor="#000000"
-                                android:enabled="false"
-                                android:clickable="false"
-                                android:layout_weight="1"
-                                />
-
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </androidx.cardview.widget.CardView>
-
-            </LinearLayout>
+           --
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -556,7 +369,7 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="90dp"
-                            android:src="@drawable/food8"
+                            android:src="@drawable/food6"
                             android:scaleType="centerCrop"
                             android:background="#00000000"
                             android:enabled="true"
@@ -601,7 +414,7 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="90dp"
-                            android:src="@drawable/food7"
+                            android:src="@drawable/food8"
                             android:background="#00000000"
                             android:enabled="true"
                             android:scaleType="centerCrop"
@@ -646,7 +459,7 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/food6"
+                            android:src="@drawable/food3"
                             android:scaleType="centerCrop"
                             android:background="#00000000"
                             android:enabled="true"

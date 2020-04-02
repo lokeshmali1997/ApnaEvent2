@@ -24,7 +24,7 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="420dp"
+        android:layout_height="500dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
 
@@ -33,7 +33,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="480dp"
             app:cardElevation="1dp"
             app:cardCornerRadius="10dp"
             android:layout_margin="10dp"
@@ -97,6 +97,7 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:hint="Enter Password"
+                            android:inputType="textPassword"
                             android:id="@+id/etPassword"
                             android:backgroundTint="@color/colorPrimary"
                             />
@@ -112,6 +113,48 @@
                             android:textStyle="bold"
                             android:layout_marginTop="40dp"
                             android:fontFamily="sans-serif-light"/>
+
+                        <Button
+                            android:id="@+id/btnForgot"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/border"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Forgot Password ?"
+                            android:onClick="ForgotPassword"
+                            android:textAlignment="textEnd"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            >
+
+
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/border"
+                                android:fontFamily="sans-serif-light"
+                                android:onClick="Signup"
+                                android:text="don't have account? SignUP"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                tools:ignore="OnClick" />
+
+
+
+                        </LinearLayout>
+
+
 
                     </LinearLayout>
                 </ScrollView>
