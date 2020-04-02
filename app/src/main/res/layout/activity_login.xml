@@ -66,42 +66,39 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:padding="20dp">
-                        <TextView
+
+
+                        <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Username"
-                            android:layout_marginTop="30dp"
-                            android:textColor="@color/black"
-                            android:textSize="16sp"
-                            />
+                            
+                            >
                         <EditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:padding="8dp"
+                            android:padding="10dp"
                             android:hint="Enter Email / Number"
                             android:id="@+id/etUsername"
+                            android:inputType="text"
                             android:backgroundTint="@color/colorPrimary"
                             />
+                        </com.google.android.material.textfield.TextInputLayout>
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Password"
-                            android:layout_marginTop="10dp"
-                            android:textColor="@color/black"
-                            android:textSize="16sp"
-                            />
-
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:passwordToggleEnabled="true"
+    android:layout_marginTop="10dp">
                         <EditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:padding="8dp"
+                            android:padding="10dp"
                             android:hint="Enter Password"
                             android:inputType="textPassword"
                             android:id="@+id/etPassword"
                             android:backgroundTint="@color/colorPrimary"
                             />
-
+</com.google.android.material.textfield.TextInputLayout>
 
                         <Button
                             android:id="@+id/btnLogin"
@@ -122,7 +119,6 @@
                             android:background="@drawable/border"
                             android:fontFamily="sans-serif-light"
                             android:text="Forgot Password ?"
-                            android:onClick="ForgotPassword"
                             android:textAlignment="textEnd"
                             android:textSize="12sp"
                             android:textStyle="bold"/>

@@ -100,7 +100,9 @@
                  android:layout_height="wrap_content"
                  app:counterEnabled="true"
                  app:counterMaxLength="8"
-                 app:errorEnabled="true">
+                 app:errorEnabled="true"
+                 app:passwordToggleEnabled="true">
+
                  <EditText
                      android:id="@+id/etPass"
                      android:layout_width="match_parent"
@@ -109,12 +111,14 @@
                      android:hint="Enter Password"
                      android:inputType="textPassword"
                      android:padding="8dp" />
+
              </com.google.android.material.textfield.TextInputLayout>
 
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            app:counterEnabled="true"
                             app:errorEnabled="true"
                             app:counterMaxLength="10">
                         <EditText
