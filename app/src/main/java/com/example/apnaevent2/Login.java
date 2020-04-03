@@ -24,7 +24,7 @@ public class Login extends AppCompatActivity {
 
     EditText etUsername,etPassword;
     Button btnLogin,btnForgot;
-
+    String toast = "";
 
     DatabaseReference mUserMaster = FirebaseDatabase.getInstance().getReference().child("UserMaster");
     Intent intent;
@@ -84,6 +84,15 @@ public class Login extends AppCompatActivity {
     }
 
 
+    public void checkValidation() {
+        if (etUsername.getText().toString().trim().equalsIgnoreCase("")) {
+            toast = "Please Enter Your Email and Number";
+        } else if (etPassword.getText().toString().equalsIgnoreCase("")) {
+            toast = "Please Enter password";
+        }
+
+    }
+
     @Override
     protected void onStart() {
         super.onStart();
@@ -91,6 +100,7 @@ public class Login extends AppCompatActivity {
 
             if(sh.contains("UserId"))
             {
+                Toast.makeText(this, "Login Successful", Toast.LENGTH_LONG).show();
                 intent = new Intent(this,MainActivity.class);
                 startActivity(intent);
             }

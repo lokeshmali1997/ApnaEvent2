@@ -93,17 +93,22 @@ public class SignUp extends AppCompatActivity {
     }
 
 
+
+
+
+
     public void checkValidation()
     {
-
-        if(etUser.getText().toString().equalsIgnoreCase(""))
+        if(etUser.getText().toString().trim().equalsIgnoreCase(""))
         {
             toast = "Please Enter Your Name";
         }
         else if(etUser.getText().toString().matches("[a-zA-Z][a-zA-Z ]*") != true)
-        {
-            toast = "Please Enter Valid Name";
-        }
+    {
+        toast = "Please Enter Valid Name";
+    }
+
+
         else {
             if (etEmail.getText().toString().equalsIgnoreCase("")) {
                 toast = "Please Enter Email Address";
@@ -122,6 +127,9 @@ public class SignUp extends AppCompatActivity {
                     if(etPass.getText().toString().equalsIgnoreCase(""))
                     {
                         toast = "Please Enter Password";
+                    }
+                    else if(etPass.length() < 8){
+                        toast = "Please Enter 8 digit";
                     }
                     else
                     {

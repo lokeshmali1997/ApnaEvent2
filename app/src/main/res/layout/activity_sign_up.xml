@@ -66,16 +66,11 @@
                          android:layout_height="wrap_content"
                          android:orientation="vertical"
                          android:padding="20dp">
-                    <TextView
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Username"
-
-                        android:layout_marginTop="30dp"
-                        android:textColor="@color/black"
-                        android:textSize="16sp"
-                        />
-
+                        app:errorEnabled="true"
+                        >
                         <EditText
                             android:id="@+id/etUser"
                             android:layout_width="match_parent"
@@ -84,16 +79,13 @@
                             android:hint="Enter name"
                             android:inputType="text"
                             android:padding="8dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                        <TextView
+
+                        <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-
-                            android:layout_marginTop="10dp"
-                            android:text="Email"
-                            android:textColor="@color/black"
-                            android:textSize="16sp" />
-
+                            app:errorEnabled="true">
                         <EditText
                             android:id="@+id/etEmail"
                             android:layout_width="match_parent"
@@ -102,31 +94,33 @@
                             android:hint="Enter Email"
                             android:inputType="textEmailAddress"
                             android:padding="8dp" />
-                         <TextView
-                             android:layout_width="match_parent"
-                             android:layout_height="wrap_content"
-                             android:text="Password"
-                             android:layout_marginTop="10dp"
-                             android:textColor="@color/black"
-                             android:textSize="16sp"
-                             />
+                        </com.google.android.material.textfield.TextInputLayout>
+             <com.google.android.material.textfield.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 app:counterEnabled="true"
+                 app:counterMaxLength="8"
+                 app:errorEnabled="true"
+                 app:passwordToggleEnabled="true">
 
-                        <EditText
-                            android:id="@+id/etPass"
+                 <EditText
+                     android:id="@+id/etPass"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:backgroundTint="@color/colorPrimary"
+                     android:hint="Enter Password"
+                     android:inputType="textPassword"
+                     android:padding="8dp" />
+
+             </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:backgroundTint="@color/colorPrimary"
-                            android:hint="Enter Password"
-                            android:padding="8dp" />
-                         <TextView
-                             android:layout_width="match_parent"
-                             android:layout_height="wrap_content"
-                             android:text="Mobile Number"
-                             android:layout_marginTop="10dp"
-                             android:textColor="@color/black"
-                             android:textSize="16sp"
-                             />
-
+                            app:counterEnabled="true"
+                            app:errorEnabled="true"
+                            app:counterMaxLength="10">
                         <EditText
                             android:id="@+id/etPhone"
                             android:layout_width="match_parent"
@@ -135,7 +129,7 @@
                             android:hint="Enter Number"
                             android:inputType="number"
                             android:padding="8dp" />
-
+                        </com.google.android.material.textfield.TextInputLayout>
                         <Button
                             android:id="@+id/btnSignUp"
                             android:layout_width="match_parent"
