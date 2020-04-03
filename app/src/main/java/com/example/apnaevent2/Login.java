@@ -67,6 +67,10 @@ public class Login extends AppCompatActivity {
                                 }
 
                             }
+                            else
+                            {
+                                Toast.makeText(Login.this, "Username or Password is Incorrect!", Toast.LENGTH_SHORT).show();
+                            }
                         }
                     }
 
@@ -100,7 +104,6 @@ public class Login extends AppCompatActivity {
 
             if(sh.contains("UserId"))
             {
-                Toast.makeText(this, "Login Successful", Toast.LENGTH_LONG).show();
                 intent = new Intent(this,MainActivity.class);
                 startActivity(intent);
             }
