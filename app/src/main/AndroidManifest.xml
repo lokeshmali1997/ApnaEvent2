@@ -8,7 +8,7 @@
         android:allowBackup="true"
         android:icon="@drawable/apnalogo"
         android:label="Apna Event"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/apnalogo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
